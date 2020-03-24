@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_03_23_202859) do
 
   create_table "blogs", force: :cascade do |t|
-    t.string "content"
+    t.text "content"
     t.string "title"
     t.string "photo"
     t.datetime "created_at", null: false
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_03_23_202859) do
   end
 
   create_table "works", force: :cascade do |t|
-    t.string "content"
+    t.text "content"
     t.string "title"
     t.string "photo"
     t.datetime "created_at", null: false
