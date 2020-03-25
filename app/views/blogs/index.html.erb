@@ -3,14 +3,11 @@
         <h1>My (digital) thoughts</h1>
           <div class="row" id="top-blog">
             <ul>
-             <% @blogs.each do |blog| %>
-                <li>
-                  <%= link_to blogs_path(blog.id) do%>
-                  <h2> <%= blog.title %> </h2>
+             <% @blogs.each do |id, blog| %>
+                <li> <%= link_to blog.title, blogs_path(id) %>
                   <p> <%= blog.content %></p>
                 </li>
                 <br>
-              <% end %>
             <% end %>
           </ul>
         </div>
