@@ -1,17 +1,14 @@
-<div class="side-nav">
-  <div class="container d-flex justify-content-center">
-        <h1>My (digital) thoughts</h1>
-          <div class="row" id="top-blog">
+  <div class="container">
+      <%= render '/shared/header' %>
+          <main id="top-blog">
             <ul>
-             <% @blogs.each do |id, blog| %>
-                <li> <%= link_to blog.title, blogs_path(id) %>
-                  <p> <%= blog.content %></p>
+             <% @blogs.each do |blog| %>
+                <li style="list-style-type: none"> <%= link_to blog.title, blog_path(blog.id) %>
+                  <p> <%= (blog.content).first(25) %> ..... </p>
                 </li>
                 <br>
             <% end %>
           </ul>
-        </div>
-      <p>See most recent blogs <a href="#top-blog"> at top</a></p>
+        </main>
+      <%= render '/shared/footer' %>
     </div>
-  </div>
-</div>
