@@ -1,0 +1,24 @@
+<header class="header">
+  <div class="header-content">
+    <h3>E.L. Byrd</h3>
+    <nav class="nav-class">
+      <ul target="_blank">
+        <!-- using a classless li since top-nav a tag will have same styling -->
+        <li class="nav-icon">
+          <%= link_to 'https://www.instagram.com', target: "_blank" do %>
+            <i class="fab fa-instagram"></i>
+          <% end %>
+        </li>
+        <li class="nav-icon">
+           <%= link_to 'https://www.linkedin.com/in/evanbyrd', target: "_blank" do %>
+            <i class="fab fa-linkedin-in"></i>
+          <% end %>
+        <li class="nav-icon">
+          <%= link_to 'https://www.github.com/elbyrd09', target: "_blank" do %>
+            <i class="fab fa-github"></i>
+          <% end %>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

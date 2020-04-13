@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'about', to: 'pages#about', as: :about
   get 'contact', to: 'pages#contact', as: :contact
-  get 'work', to: 'pages#work', as: :work
-  get 'blog', to: 'pages#blog', as: :blog
+  get 'work', to: 'pages#work', as: :work_home
+  get 'blog', to: 'pages#blog', as: :blog_home
 
   resources :blogs
   resources :works
