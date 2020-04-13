@@ -1,11 +1,9 @@
 <div class="blog-form">
   <div class="blog-infos">
-    <%= simple_form_for(@blog, url: blogs_path) do |f| %>
+    <%= simple_form_for(@blog) do |f| %>
       <h2><%= f.input :title %></h2>
       <p><%= f.input :content, size: "60x12" %></p>
-      <%= f.submit "Create new blog entry", class: "btn btn-primary" %>
+      <%= f.submit "Create new blog entry", class: "btn btn-primary", url: works_path %>
     <% end %>
   </div>
 </div>
-
-

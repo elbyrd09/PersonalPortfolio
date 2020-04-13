@@ -1,2 +1,24 @@
-
+<div class="container">
+<%= render '/shared/header' %>
+    <main id="top-blog">
+      <div class="card-deck">
+          <div class="card">
+            <a href="/blogs"><h5 class="card-title">My (digital) thoughts</h5></a>
+          </div>
+          <div class="card">
+            <a href="/works"><h5 class="card-title">Current projects (ie. hustle)</h5></a>
+          </div>
+          <div class="card">
+            <a href="/contact"><h5 class="card-title">Contact for Work</h5></a>
+          </div>
+      </div>
+    </main>
+    <main class="profile-card">
+       <%= image_tag "Byrd.png", class: "card-profile", alt: "Byrd" %>
+    </main>
+    <main class="profile-card">
+      <p>Motivated by a high density of creative energy and the fulfillment <br> gained from  working with individuals to reach professional milestones. <br><br><span style="color: rgba(27,127,246)"><strong>Product manager, developer, and avid jetsetter</strong></span> <br> Find me on Instagram or reach out to collaborate with my photography company, Party Reel!</p>
+    </main>
+  <%= render '/shared/footer' %>
+</div>
 

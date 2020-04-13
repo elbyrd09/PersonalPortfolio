@@ -1,0 +1,58 @@
+.card-deck {
+  display: flex;
+  flex-row: row;
+  justify-content: space-between;
+  height: 5rem;
+  text-align: center;
+  // text-transform: 0;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+.card-deck .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgba(255,140,0, .5)
+}
+
+.card-deck .card:hover{
+  cursor: pointer;
+  color: $blue !important;
+  transition: 2s;
+  border-radius: 20px;
+  background-color: #073263;
+
+}
+
+.card-deck a{
+  text-decoration: none !important;
+  color: rgb(255,140,0) !important;
+}
+
+  .profile-card {
+  display: grid;
+  align-content: end;
+  p {
+   display: grid;
+   justify-content: end;
+   text-align: right;
+   font-weight: 3px;
+   font-family: Montserrat;
+   letter-spacing: 3px;
+   line-height: 33px;
+    }
+  }
+
+  .card-profile {
+    border-radius: 20px;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(255,140,0);
+  }
+
+

@@ -2,26 +2,22 @@
   <div class="header-content">
     <h3>E.L. Byrd</h3>
     <nav class="nav-class">
-      <ul>
+      <ul target="_blank">
         <!-- using a classless li since top-nav a tag will have same styling -->
-        <li>
-          <a class="top-nav" href="#blogs">Thoughts</a>
-        </li>
-        <li>
-          <a class="top-nav" href="#works">Hustle</a>
+        <li class="nav-icon">
+          <%= link_to 'https://www.instagram.com', target: "_blank" do %>
+            <i class="fab fa-instagram"></i>
+          <% end %>
         </li>
         <li class="nav-icon">
-          <a href="mailto: elbyrd09@gmail.com"><i class="far fa-envelope"></i></a>
-        </li>
+           <%= link_to 'https://www.linkedin.com/in/evanbyrd', target: "_blank" do %>
+            <i class="fab fa-linkedin-in"></i>
+          <% end %>
         <li class="nav-icon">
-          <a href="www.github.com/elbyrd09" target="blank"><i class="fab fa-github"></i></a>
+          <%= link_to 'https://www.github.com/elbyrd09', target: "_blank" do %>
+            <i class="fab fa-github"></i>
+          <% end %>
         </li>
-        <li class="nav-icon">
-          <a href="www.linkedin.com/in/evanbyrd" target="blank"><i class="fab fa-linkedin-in"></i></a>
-        </li>
-      <!--   <li class="nav-icon">
-          <a href="www.mypartyreel.com" target="blank"></a>
-        </li> -->
       </ul>
     </nav>
   </div>

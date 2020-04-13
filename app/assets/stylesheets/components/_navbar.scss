@@ -22,10 +22,12 @@
 }
 
 .nav-class ul {
+  display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style: none;
-  letter-spacing: 25px;
+  letter-spacing: 45px;
 }
 
 .nav-class ul li {
@@ -33,7 +35,7 @@
   padding: 10px;
   list-style-type: none;
   font-size: 22px;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
 }
 
 .nav-class ul li a:hover{
