@@ -1,11 +1,13 @@
 <header class="header">
   <div class="header-content">
-    <h3>E.L. Byrd</h3>
+    <%= link_to '/', class: 'font-title' do %>
+      <span style="color: #1B7FF6;">//&nbsp</span><span style="color: #FFF;"><%= 'E.L.Byrd' %></span>
+    <% end %>
     <nav class="nav-class">
       <ul target="_blank">
         <!-- using a classless li since top-nav a tag will have same styling -->
         <li class="nav-icon">
-          <%= link_to 'https://www.instagram.com', target: "_blank" do %>
+          <%= link_to 'https://www.instagram.com/party.reel/', target: "_blank" do %>
             <i class="fab fa-instagram"></i>
           <% end %>
         </li>
