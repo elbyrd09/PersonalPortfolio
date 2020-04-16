@@ -1,26 +1,13 @@
-<header class="header">
+<header class="header-two">
   <div class="header-content">
     <%= link_to '/', class: 'font-title' do %>
     <div class="title">
       <span style="color: #1B7FF6;">//&nbsp</span><span style="color: #FFF;"><%= 'E.L.Byrd' %></span>
     </div>
     <% end %>
-    <div class="card-deck">
-          <a href="/blogs" class="card">
-            <p class="card-title">My (digital) thoughts</p>
-          </a>
-          <a href="/works" class="card">
-            <p class="card-title">Current projects</p>
-          </a>
-      </div>
     <nav class="nav-class">
       <ul target="_blank">
         <!-- using a classless li since top-nav a tag will have same styling -->
-        <li class="nav-icon">
-          <%= mail_to "elbyrd09@gmail.com", target: "_blank" do %>
-            <i class="far fa-envelope"></i>
-          <% end %>
-        </li>
         <li class="nav-icon">
           <%= link_to 'https://www.instagram.com/party.reel/', target: "_blank" do %>
             <i class="fab fa-instagram"></i>
