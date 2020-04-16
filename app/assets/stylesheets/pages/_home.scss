@@ -1,7 +1,7 @@
 // Specific CSS for your home-page
 
 .container{
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 100px minmax(400px, 1fr) 100px 100px;
@@ -11,6 +11,36 @@
       "main main main"
       "footer footer footer";
 }
+
+.container-trans{
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('evan23.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px minmax(400px, 1fr) 100px 100px;
+  grid-gap: 10px;
+  padding: 30px;
+  grid-template-areas:
+      "header header header header"
+      "main main main ."
+      "footer footer footer footer";
+}
+
+.page-content{
+  height: 200vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-gap: 10px;
+  grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+}
+
 
 header {
  grid-area: header;

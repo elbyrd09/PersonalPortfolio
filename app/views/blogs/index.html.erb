@@ -1,16 +1,14 @@
-<div class="container">
-    <%= render '/shared/header' %>
-        <main id="top-blog">
-          <ul>
-            <div class="card">
-              <div class="card-body">
-                <% @blogs.each do |blog| %>
-                  <li>
-                    <%= image_tag "Byrd.png", class: "card-new", alt: "Byrd" %>
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"> <%= (blog.content).first(25) %> ..... </p>
-                  </li>
-                <br>
+<div class="container-trans">
+  <%= render '/shared/header_transp' %>
+      <main id="top-blog">
+        <ul>
+          <div class="page-content">
+            <div class="card-body" style="list-style-type: none;">
+              <% @blogs.each do |blog| %>
+                <li>
+                  <h5 class="card-title"><%= blog.title %></h5>
+                  <p class="card-text"><%= (blog.content).first(25) %> ..... </p>
+                </li>
             <% end %>
           </div>
         </div>
