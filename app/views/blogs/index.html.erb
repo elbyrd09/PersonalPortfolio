@@ -4,10 +4,10 @@
         <ul>
           <div class="page-content">
             <% @blogs.each do |blog| %>
-                <div class="<%= update_class(blog) %>" style="list-style-type: none;">
+                <div class="<%= update_class(blog) %>">
                   <li>
                     <h5 class="card-title"><%= blog.title %></h5>
-                    <p class="card-text"><%= (blog.content).first(25) %> ..... </p>
+                    <p class="card-text"><%= (blog.content).first(50) %> ..... </p>
                   </li>
                 </div>
             <% end %>
