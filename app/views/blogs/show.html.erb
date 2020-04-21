@@ -1,2 +1,12 @@
-<h1>Blog#show</h1>
-<p>Find me in app/views/blog/show.html.erb</p>
+<div class="container">
+  <%= render '/shared/header_transp' %>
+    <div class="blog-row">
+      <div class="col-6 col-lg-12 col-md-8 col-sm-6">
+        <h3><%= @blog.title %></h3>
+        <article><em><%= @blog.content %></em></article>
+      </div>
+    </div>
+  <%= link_to "Create new blog", new_blog_path  %>
+  <%= render '/shared/footer' %>
+</div>
+
