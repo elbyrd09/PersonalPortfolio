@@ -1,2 +1,11 @@
-<h1>Blog#show</h1>
-<p>Find me in app/views/blog/show.html.erb</p>
+<div class="container" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<%= asset_path blog.photo %>)">
+  <%= render '/shared/header_transp' %>
+    <div class="blog-row">
+      <div class="col-6 col-lg-12 col-md-8 col-sm-6">
+        <h3><%= @blog.title %></h3>
+        <article><em><%= @blog.content %></em></article>
+      </div>
+    </div>
+  <%= render '/shared/footer' %>
+</div>
+
