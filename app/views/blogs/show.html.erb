@@ -1,4 +1,4 @@
-<div class="container" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<%= asset_path blog.photo %>)">
+<div class="container">
   <%= render '/shared/header_transp' %>
     <div class="blog-row">
       <div class="col-6 col-lg-12 col-md-8 col-sm-6">
@@ -6,6 +6,7 @@
         <article><em><%= @blog.content %></em></article>
       </div>
     </div>
+  <%= link_to "Create new blog", new_blog_path  %>
   <%= render '/shared/footer' %>
 </div>
 
