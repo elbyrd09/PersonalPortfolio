@@ -94,35 +94,53 @@
   }
 
   .card-body li {
-    background-color: rgba(0,0,0, .4);
+    background-color: rgba(0,0,0, .5);
     padding: 50px;
     border-radius: 25%;
     margin-bottom: 15px;
     border-bottom-style: solid;
-    border-bottom-color: #fff;
+    border-bottom-color: rgba(255,255,255,.5);
     color: white;
+  }
 
+  .card-body li:hover {
+    background-color: rgba(0,0,0,.2);
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    transition: .2s;
   }
 
 .card-body2 li {
-    background-color: rgba(0,0,0, .4);
+    background-color: rgba(0,0,0,.5);
     padding: 50px;
     border-radius: 25%;
     margin-bottom: 15px;
     border-bottom-style: solid;
-    border-bottom-color: #fff;
-        color: white;
-
-
-  }
-.card-body3 li {
-    background-color: rgba(0,0,0, .4);
-    padding: 50px;
-    border-radius: 25%;
-    margin-bottom: 15px;
-    border-bottom-style: solid;
-    border-bottom-color: #fff;
+    border-bottom-color: rgba(255,255,255,.5);
     color: white;
+  }
 
+  .card-body2 li:hover {
+    background-color: rgba(0,0,0,.2);
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    transition: .2s;
+  }
+
+.card-body3 li {
+    background-color: rgba(0,0,0, .5);
+    padding: 50px;
+    border-radius: 25%;
+    margin-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255,255,255,.5);
+    color: white;
+  }
+
+  .card-body3 li:hover {
+    background-color: rgba(0,0,0,.2);
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    transition: .2s;
   }
 

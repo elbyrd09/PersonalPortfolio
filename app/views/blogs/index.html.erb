@@ -4,14 +4,16 @@
         <ul>
           <div class="page-content">
             <% @blogs.each do |blog| %>
+
                 <div class="<%= update_class(blog) %>">
+                   <%= link_to blog_path(blog), style: "text-decoration: none" do %>
                   <li>
                     <h5 class="card-title"><%= blog.title %></h5>
                     <p class="card-text"><%= (blog.content).first(50) %> ..... </p>
                   </li>
                 </div>
             <% end %>
-
+            <% end %>
         </div>
       </ul>
     </main>
