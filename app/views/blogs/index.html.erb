@@ -3,14 +3,14 @@
       <main id="top-blog">
         <ul>
           <div class="page-content">
-            <div class="<%= update_class %>" style="list-style-type: none;">
-              <% @blogs.each do |blog| %>
+            <% @blogs.each do |blog| %>
+                <div class="<%= update_class(blog) %>" style="list-style-type: none;">
                   <li>
                     <h5 class="card-title"><%= blog.title %></h5>
                     <p class="card-text"><%= (blog.content).first(25) %> ..... </p>
                   </li>
+                </div>
             <% end %>
-          </div>
         </div>
       </ul>
     </main>
