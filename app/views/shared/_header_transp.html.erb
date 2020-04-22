@@ -9,6 +9,11 @@
       <ul target="_blank">
         <!-- using a classless li since top-nav a tag will have same styling -->
         <li class="nav-icon">
+          <%= mail_to "elbyrd09@gmail.com", target: "_blank" do %>
+            <i class="far fa-envelope"></i>
+          <% end %>
+        </li>
+        <li class="nav-icon">
           <%= link_to 'https://www.instagram.com/party.reel/', target: "_blank" do %>
             <i class="fab fa-instagram"></i>
           <% end %>
