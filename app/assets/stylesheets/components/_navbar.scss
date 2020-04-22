@@ -1,5 +1,5 @@
 .header {
-  background-color: #0d0221;
+  background-color: transparent;
   position: absolute;
   left: 0;
   right: 0;
@@ -42,20 +42,9 @@
   cursor: pointer;
   // padding: 20px;
   border-radius: 5px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: transparent;
   color: orange;
   text-decoration: none;
 }
 
-// .navbar-lewagon {
-//   justify-content: space-between;
-//   background: white;
-// }
 
-// .navbar-lewagon .navbar-collapse {
-//   flex-grow: 0;
-// }
-
-// .navbar-lewagon .navbar-brand img {
-//   width: 40px;
-// }

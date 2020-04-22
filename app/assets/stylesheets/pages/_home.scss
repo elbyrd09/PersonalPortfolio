@@ -1,15 +1,10 @@
 // Specific CSS for your home-page
 
 .container{
-  height: 100%;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 100px minmax(400px, 1fr) 100px 100px;
-  grid-gap: 10px;
-  grid-template-areas:
-      "header header header"
-      "main main main"
-      "footer footer footer";
+ max-width: 100%;
+ height: 120vh;
+ background-size: stretch;
+
 }
 
 .container-trans{
