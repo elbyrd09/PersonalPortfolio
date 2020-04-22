@@ -23,7 +23,7 @@
 
 .nav-class ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -40,7 +40,6 @@
 
 .nav-class ul li a:hover{
   cursor: pointer;
-  // padding: 20px;
   border-radius: 5px;
   background-color: transparent;
   color: orange;
