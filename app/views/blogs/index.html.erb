@@ -3,18 +3,18 @@
       <main id="top-blog">
         <ul>
           <div class="page-content">
-            <div class="card-body" style="list-style-type: none;">
-              <% @blogs.each do |blog| %>
-                <%= link_to blog_path(blog) do %>
-                <li>
-                  <h5 class="card-title"><%= blog.title %></h5>
-                  <p class="card-text"><%= (blog.content).first(25) %> ..... </p>
-                </li>
+            <% @blogs.each do |blog| %>
+                <div class="<%= update_class(blog) %>">
+                   <%= link_to blog_path(blog), style: "text-decoration: none" do %>
+                  <li>
+                    <h5 class="card-title"><%= blog.title %></h5>
+                    <p class="card-text"><%= (blog.content).first(50) %> ..... </p>
+                  </li>
+                </div>
+              <% end %>
             <% end %>
-            <% end %>
-          </div>
+          </ul>
         </div>
-      </ul>
-    </main>
-  <%= render '/shared/footer' %>
+      </main>
+    <%= render '/shared/footer' %>
 </div>

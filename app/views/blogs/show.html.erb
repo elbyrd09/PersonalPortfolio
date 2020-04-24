@@ -1,14 +1,19 @@
 <div class="container-blog">
+  <header>
   <%= render '/shared/header_transp' %>
-    <div class="blog-row">
+
+  </header>
       <article class="col-6 col-lg-12 col-md-8 col-sm-6">
         <h3><%= @blog.title %></h3>
         <p><<%= @blog.content %></p>
       </article>
-    </div>
     <main>
+      <%= link_to "Back to Evan's Thought Edifice",  %>
       <%= link_to "Create new blog", new_blog_path  %>
-      <%= render '/shared/footer' %>
     </main>
+    <footer>
+      <%= render '/shared/footer' %>
+
+    </footer>
 </div>
 
