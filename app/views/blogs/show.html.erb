@@ -1,15 +1,15 @@
 <div class="container-blog">
   <%= render '/shared/header_transp' %>
 
-      <article class="col-6 col-lg-12 col-md-8 col-sm-6">
+      <article class="col-12 col-lg-12 col-md-8 col-sm-12">
         <h3><%= @blog.title %></h3>
         <p><%= @blog.content %></p>
       </article>
-    <main>
+    <main class="text-center col-12 col-lg-12 col-md-12 col-sm-12">
       <%= link_to "Back to Thought Edifice", blogs_path, class: 'btn btn-primary'  %>
       <br><br>
-      <%= link_to "Create new blog", new_blog_path, style: "justify-center"  %>
+      <%= link_to "Create new blog", new_blog_path  %>
     </main>
-      <%= render '/shared/footer' %>
+     <footer><%= render '/shared/footer' %></footer>
 </div>
 
