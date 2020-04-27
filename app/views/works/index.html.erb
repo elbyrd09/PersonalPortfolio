@@ -1,4 +1,20 @@
-<%= render '/shared/header' %>
-
-<%= render '/shared/footer' %>
-
+<div class="page-content-works">
+  <%= render '/shared/header' %>
+    <main class="card col-12 col-lg-12 col-md-10 col-sm-10" style="font-size: 1.2vw; grid-column: 2 / span 7; letter-spacing: 2px; text-align: start; background-color: rgba(192,192, 192, .6); border: solid; border-color: white; border-radius: 20px; color: white;">
+      <% @works.each do |work| %>
+      <h5 class="card-header" style="margin-left: 5px; background-color: transparent;">
+        <%= work.title %>
+      </h5>
+        <div class="card-body-works align-items-center">
+            <p class="card-text"><%= work.content %></p>
+        </div>
+        <div class="card-footer d-flex justify-content-between" style="margin-top: 105px; background-color: transparent; mix-blend-mode: screen;">
+              <%= link_to 'https://www.github.com/elbyrd09', target: "_blank", style: "text-decoration: none;" do %>
+                <i class="fab fa-github"></i> &nbsp See <%= work.title %>'s codebase
+              <% end %>
+          <% end %>
+          <span style="font-size: small;">Created using the Rails framework, Ruby, CSS, JS, and HTML</span>
+        </div>
+  </main>
+  <%= render '/shared/footer' %>
+</div>
