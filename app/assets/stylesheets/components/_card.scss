@@ -161,3 +161,27 @@
     transition: .2s;
   }
 
+  .card-work {
+    font-size: 1.2vw;
+    grid-column: 2 / span 7;
+    letter-spacing: 2px;
+    text-align: start;
+    background-color: rgba(192,192, 192, .6);
+    border-color: white;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    align-items: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    line-height: 12px;
+  }
+
+
