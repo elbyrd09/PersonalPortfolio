@@ -1,21 +1,25 @@
 <div class="page-content-works">
-  <%= render '/shared/header' %>
-    <main class="card-work col-12 col-lg-12 col-md-10 col-sm-10">
-      <% @works.each do |work| %>
-      <h5 class="card-header" style="margin-left: 5px; background-color: transparent;">
-        <%= work.title %>
-      </h5>
-        <div class="card-body-works align-items-center">
-            <p class="card-text"><%= work.content %></p>
-        </div>
-        <div class="card-footer d-flex justify-content-between" style="margin-top: 105px; background-color: transparent; mix-blend-mode: screen;">
-              <%= link_to 'https://www.github.com/elbyrd09', target: "_blank", style: "text-decoration: none;" do %>
-                <i class="fab fa-github"></i> &nbsp See <%= work.title %>'s codebase
+    <header> <%= render '/shared/header' %>  </header>
+
+        <main class="card-work col-12 col-lg-12 col-md-10 col-sm-10">
+          <% @works.each do |work| %>
+          <h5 class="card-header" style="margin-left: 5px; background-color: transparent;">
+            <%= work.title %>
+          </h5>
+            <div class="card-body-works">
+                <p class="card-text w-85"><%= work.content %></p>
+                <p class="card-text w-50"><%= render 'shared/carousel'%></p>
+            </div>
+            <div class="card-footer">
+                  <%= link_to 'https://www.github.com/elbyrd09', target: "_blank", style: "text-decoration: none;" do %>
+                    <i class="fab fa-github"></i> &nbsp See <%= work.title %>'s codebase
+                  <% end %>
               <% end %>
-          <% end %>
-          <span style="font-size: small;">Created using the Rails framework, Ruby, CSS, JS, and HTML</span>
-        </div>
-  </main>
-  <%= render '/shared/footer' %>
+              <span style="font-size: small;">Created using the Rails framework, Ruby, CSS, JS, and HTML</span>
+            </div>
+      </main>
+    <footer>
+      <%= render '/shared/footer' %>
+    </footer>
 </div>
 

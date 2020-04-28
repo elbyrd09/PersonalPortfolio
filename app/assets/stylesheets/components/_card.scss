@@ -70,14 +70,18 @@
 
 
   .card-body-works {
-    display: grid;
-    text-align: start;
-    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2vw;
+    width: 90%;
     padding: 10px;
     color: white;
     margin-left: 15px;
     margin-top: 10px;
+    line-height: 22px;
+
   }
+
   .card-body {
     display: grid;
     text-align: center;
@@ -182,6 +186,17 @@
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     line-height: 12px;
+  }
+
+  .card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: transparent;
+    mix-blend-mode: screen;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
   }
 
 
