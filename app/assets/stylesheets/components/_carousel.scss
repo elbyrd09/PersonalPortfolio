@@ -1,0 +1,16 @@
+.carousel-inner {
+  height: 200px;
+  width: 320px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  border-color: transparent;
+  border-radius: 10px;
+  transition: 5s;
+}
+
+ .carousel .carousel-item img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+ }
