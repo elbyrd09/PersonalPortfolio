@@ -3,19 +3,24 @@
 
         <main class="card-work col-12 col-lg-12 col-md-10 col-sm-10">
           <% @works.each do |work| %>
-          <h5 class="card-header" style="margin-left: 5px; background-color: transparent;">
+          <h5 class="card-header d-flex justify-content-between" style="margin-left: 5px; background-color: transparent;">
             <%= work.title %>
+            <span style="font-size: small; color: rgba(255,255,255,.7);">Created using the Rails framework, Ruby, CSS, JS, and HTML</span>
           </h5>
             <div class="card-body-works">
                 <p class="card-text w-85"><%= work.content %></p>
                 <p class="card-text w-50"><%= render 'shared/carousel'%></p>
             </div>
             <div class="card-footer">
-                  <%= link_to 'https://www.github.com/elbyrd09', target: "_blank", style: "text-decoration: none;" do %>
-                    <i class="fab fa-github"></i> &nbsp See <%= work.title %>'s codebase
-                  <% end %>
+                    <div class="footer-icons">
+                      <%= link_to 'https://www.github.com/elbyrd09', target: "_blank", style: "text-decoration: none;" do %>
+                      <i class="fab fa-github"></i> &nbsp See <%= work.title %>'s codebase
+                    <%= link_to 'https://trello.com/b/5KlWXW7T/party-reel-2020', target: "_blank", style: "text-decoration: none;" do %>
+                      <i class="fab fa-trello"></i> &nbsp See how I corral my development team
+                      <% end %>
+                      <% end %>
+                  </div>
               <% end %>
-              <span style="font-size: small;">Created using the Rails framework, Ruby, CSS, JS, and HTML</span>
             </div>
       </main>
     <footer>

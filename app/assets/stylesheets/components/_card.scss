@@ -196,7 +196,14 @@
     mix-blend-mode: screen;
     display: flex;
     justify-content: space-between;
-    margin-top: 5rem;
+    align-items: flex-end;
+    .footer-icons {
+      display: flex;
+      align-content: end;
+      flex-direction: column;
+      line-height: 35px;
+
+    }
   }
 
 
