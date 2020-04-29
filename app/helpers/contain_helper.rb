@@ -5,7 +5,7 @@ module ContainHelper
     elsif item.style == 'Code'
       'container-blog-code'
     else item.style == "Artist"
-      # && item.photo
+      # && #{item.handle}
      'container-blog-artist'
     end
   end
