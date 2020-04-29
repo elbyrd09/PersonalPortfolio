@@ -1,4 +1,25 @@
-<%= render '/shared/header' %>
+<div class="page-content-works">
+    <header> <%= render '/shared/header' %>  </header>
 
-<%= render '/shared/footer' %>
+        <main class="card-work col-12 col-lg-12 col-md-10 col-sm-10">
+          <% @works.each do |work| %>
+          <h5 class="card-header" style="margin-left: 5px; background-color: transparent;">
+            <%= work.title %>
+          </h5>
+            <div class="card-body-works">
+                <p class="card-text w-85"><%= work.content %></p>
+                <p class="card-text w-50"><%= render 'shared/carousel'%></p>
+            </div>
+            <div class="card-footer">
+                  <%= link_to 'https://www.github.com/elbyrd09', target: "_blank", style: "text-decoration: none;" do %>
+                    <i class="fab fa-github"></i> &nbsp See <%= work.title %>'s codebase
+                  <% end %>
+              <% end %>
+              <span style="font-size: small;">Created using the Rails framework, Ruby, CSS, JS, and HTML</span>
+            </div>
+      </main>
+    <footer>
+      <%= render '/shared/footer' %>
+    </footer>
+</div>
 

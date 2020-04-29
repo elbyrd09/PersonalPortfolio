@@ -82,6 +82,22 @@
       "footer footer footer footer footer footer footer footer footer";
 }
 
+.page-content-works{
+  height: auto;
+  width: 100%;
+  display: grid;
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("Writing.png");
+  background-size: cover;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 200px 200px 200px 200px;
+  grid-gap: 10px;
+  grid-template-areas:
+      "header header header header header header header header header"
+      "main main main main main main main main main"
+      "main main main main main main main main main"
+      "footer footer footer footer footer footer footer footer footer";
+}
+
 
 header {
  grid-area: header;
