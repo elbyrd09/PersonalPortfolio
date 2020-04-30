@@ -9,9 +9,10 @@
 }
 
 .container-trans{
-  height: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('evan23.jpg');
-  background-position: center;
+  // height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('face.png');
+  background-position:  right center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -27,7 +28,7 @@
 
 .container-blog{
   height: 100%;
-  background: linear-gradient(to left, #333 50%, #FF7F50 75%, #FF7F50 75%);;
+  background: linear-gradient(to bottom, #333 50%, #1B7FF6 75%, #1B7FF6 75%);;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px minmax(400px, 1fr) 100px 100px;
@@ -54,27 +55,27 @@
 }
 
 .container-blog-artist{
+  background: linear-gradient(to bottom, #333 50%, #1B7FF6 75%, #1B7FF6 75%);;
   background-image: url('gregnoire/wings.png');
-  width: 100%;
-  height: 180vh;
-  background-position: center;
+  background-position: 0px 0px;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
-  // background-image: url(image_path("/images/#{$handle}/#{$photo}.*" ))
+  // background-attachment: fixed;
+  background-color: rgba(192,192,192,.8);
+  // height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px minmax(400px, 1fr) 100px 100px;
-  grid-gap: 10px;
   padding: 30px;
   grid-template-areas:
       "header header header header"
       "article article article main"
       "footer footer footer footer";
-      article {
-        text-align: center;
-        color: rgba(0,0,0,.8);
-        font-family: "Nunito", "Helvetica", "sans-serif";
-      }
+  article {
+    text-align: center;
+    color: rgba(255,255,255,.9);
+    font-family: "Nunito", "Helvetica", "sans-serif";
+  }
 }
 
 .page-content{
