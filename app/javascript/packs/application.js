@@ -15,3 +15,13 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
+import "bootstrap";
+import "jquery";
+
+import { navSlide } from 'packs/nav.js';
+
+
+navSlide();
+
+
+

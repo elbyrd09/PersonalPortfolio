@@ -14,8 +14,18 @@
           </a>
       </div>
     <nav class="nav-class">
-      <ul target="_blank">
+      <ul class="class-nav" target="_blank">
         <!-- using a classless li since top-nav a tag will have same styling -->
+        <li class="nav-icon" id="hide-nav">
+          <a href="/blogs">
+            <p class="card-title">Thought Edifice</p>
+          </a>
+        </li>
+        <li class="nav-icon" id="hide-nav">
+          <a href="/works">
+            <p class="card-title">Current Projects</p>
+          </a>
+        </li>
         <li class="nav-icon">
           <%= mail_to "elbyrd09@gmail.com", target: "_blank" do %>
             <i class="far fa-envelope"></i>
@@ -36,6 +46,14 @@
           <% end %>
         </li>
       </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
   </div>
 </header>
+
+
+
