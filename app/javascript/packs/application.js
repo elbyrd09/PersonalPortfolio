@@ -17,3 +17,11 @@
 
 import "bootstrap";
 import "jquery";
+
+import { navSlide } from 'packs/nav.js';
+
+
+navSlide();
+
+
+
