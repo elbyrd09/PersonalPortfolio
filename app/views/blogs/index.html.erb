@@ -2,50 +2,45 @@
   <%= render '/shared/header' %>
     <main class="vertical-tabs">
   <!-- Nav tabs -->
-      <ul class="nav nav-pills" id="myTab" role="tablist">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="code-tab" data-toggle="tab" href="#code" role="tab" aria-controls="code">Coding</a>
+          <a class="nav-link active" id="code-tab" data-toggle="tab" href="#Code" role="tab">Coding</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="byrd-tab" data-toggle="tab" href="#byrd" role="tab" aria-controls="byrd">Byrd's words</a>
+          <a class="nav-link" id="personal-tab" data-toggle="tab" href="#Personal" role="tab">Byrd's words</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="interests-tab" data-toggle="tab" href="#interests" role="tab">Interests</a>
+          <a class="nav-link" id="artists-tab" data-toggle="tab" href="#Artists" role="tab">Interests</a>
         </li>
       </ul>
 
       <!-- Tab panes -->
-  <div class="tab-content">
-    <% @blogs.each do |blog| %>
-      <% if blog.style == 'Code' %>
-        <div class="tab-pane fade show active" id="code" role="tabpanel">
-          <li class="tab-display">
-            <div class="card">
-              <%= blog.title %>
-            </div>
-          </li>
-        </div>
-      <% elsif blog.style == 'Personal' %>
-        <div class="tab-pane" id="byrd" role="tabpanel">
-          <li class="tab-display">
-            <div class="card">
-              <%= blog.title %>
-            </div>
-          </li>
-        </div>
-      <% else %>
-        <div class="tab-pane" id="interests" role="tabpanel">
-          <li class="tab-display">
-            <div class="card">
-              <%= blog.title %>
-            </div>
-          </li>
-        </div>
-      <% end %>
-      <% end %>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="Code">
+        <% @code_blogs.each do |blog| %>
+          <%= link_to blog_path(blog), class: "card" do  %>
+            <%= blog.title %>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="tab-pane" id="Personal" >
+        <% @personal_blogs.each do |blog| %>
+          <%= link_to blog_path(blog), class: "card" do  %>
+            <%= blog.title %>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="tab-pane" id="Artists">
+        <% @artists_blogs.each do |blog| %>
+          <%= link_to blog_path(blog), class: "card" do  %>
+            <%= blog.title %>
+          <% end %>
+        <% end %>
+        </li>
+      </div>
     </div>
   </main>
-    <%= render '/shared/footer' %>
+  <%= render '/shared/footer' %>
 </div>
 
 
