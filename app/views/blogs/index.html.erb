@@ -1,20 +1,49 @@
 <div class="container-trans">
   <%= render '/shared/header' %>
-      <main id="top-blog">
-        <ul>
-          <div class="page-content">
-            <% @blogs.each do |blog| %>
-                <div class="<%= update_class(blog) %>">
-                   <%= link_to blog_path(blog), style: "text-decoration: none" do %>
-                  <li>
-                    <h5 class="card-title"><%= blog.title %></h5>
-                    <p class="card-text"><%= (blog.content).first(100) %> ..... </p>
-                  </li>
-                </div>
-              <% end %>
-            <% end %>
-          </ul>
-        </div>
-      </main>
-    <%= render '/shared/footer' %>
+    <main class="vertical-tabs">
+  <!-- Nav tabs -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="code-tab" data-toggle="tab" href="#Code" role="tab">Coding</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="personal-tab" data-toggle="tab" href="#Personal" role="tab">Byrd's words</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="artists-tab" data-toggle="tab" href="#Artists" role="tab">Interests</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="Code">
+        <% @code_blogs.each do |blog| %>
+          <%= link_to blog_path(blog), class: "card" do  %>
+            <%= blog.title %>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="tab-pane" id="Personal" >
+        <% @personal_blogs.each do |blog| %>
+          <%= link_to blog_path(blog), class: "card" do  %>
+            <%= blog.title %>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="tab-pane" id="Artists">
+        <% @artists_blogs.each do |blog| %>
+          <%= link_to blog_path(blog), class: "card" do  %>
+            <%= blog.title %>
+          <% end %>
+        <% end %>
+        </li>
+      </div>
+    </div>
+  </main>
+  <%= render '/shared/footer' %>
 </div>
+
+
+
+
+

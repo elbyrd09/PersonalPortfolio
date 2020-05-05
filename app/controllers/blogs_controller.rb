@@ -3,6 +3,9 @@ class BlogsController < ApplicationController
 
   def index
     @blogs = Blog.all
+    @code_blogs = @blogs.where(:style => 'Code')
+    @personal_blogs = @blogs.where(:style => 'Personal')
+    @artists_blogs = @blogs.where(:style => 'Artists')
   end
 
   def show
@@ -34,7 +37,7 @@ class BlogsController < ApplicationController
 
   def blog_params
 
-    params.require(:blog).permit(:content, :title, photo: [])
+    params.require(:blog).permit(:content, :title, :photo)
   end
 
   def set_blog
