@@ -1,2 +1,31 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<%= render 'shared/header' %>
+<dxiv class="container-about">
+  <article>
+    <h1 class="text-center py-3" style="color: orange;">Who am I, you ask?</h1>
+      <p>
+        I’m an American Full Stack Developer, out in the world, doing my thang.  I studied at Le Wagon’s Full Stack Bootcamp in Bali, Indonesia for 9 weeks in the Winter of 2020.  I love working on projects that propel the user into thoughtful, sleek and intuitive digital experiences</p><br>
+      <p>
+        I build collaboratively and leverage learnings as a Product Manager to lead small teams.  I see my background as an asset to blend seamlessly into new teams with an array of hard and soft skills.  Let’s connect to speak more about my interests in healthcare, gaming, live entertainment, and educational companies particularly in software engineering.</p><br>
+      <p>
+        I’m looking for Full Stack, Front End, or freelance roles within the US or remote teams.  I’m experienced with Ruby, Javascript, CSS, HTML, Javascript, Ruby on Rails, TDD, Adobe Illustrator, Adobe Lightroom, Microsoft Office Suite, JIRA, Asana, and Agile.</p><br>
+      <p>
+        I like writing about code + poetry, watching Civil Engineering videos on YouTube, snowboarding, and pickling thangs</p><br>
+  </article>
+        <main class="about-contact">
+          <span class="text1">
+          <p style="color: white;">Contact me anytime</p><br>
+    <%= mail_to "elbyrd09@gmail.com", target: "_blank", id: "mail-about" do %>
+              <i class="far fa-envelope">&nbsp elbyrd09@gmail.com</i>
+            <% end %><br>
+          </span>
+          <span class="text2">
+          610-724-2431
+          </span>
+        </main>
+      </div>
+</div>
+<%= render 'shared/footer' %>
+
+
+
+
