@@ -1,35 +1,73 @@
 <div class="container-trans">
   <%= render '/shared/header' %>
     <main class="vertical-tabs">
-      <ul class="nav nav-tabs" role="tablist">
+  <!-- Nav tabs -->
+      <ul class="nav nav-pills" id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="code-tab" data-toggle="tab" href="#pag1" role="tab" aria-controls="Coding">Coding</a>
+          <a class="nav-link active" id="code-tab" data-toggle="tab" href="#code" role="tab" aria-controls="code">Coding</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="byrd-tab" data-toggle="tab" href="#pag2" role="tab" aria-controls="Byrd's words">Byrd's words</a>
+          <a class="nav-link" id="byrd-tab" data-toggle="tab" href="#byrd" role="tab" aria-controls="byrd">Byrd's words</a>
         </li>
-        <li class="nav-item" >
-          <a class="nav-link" id="interest-tab" data-toggle="tab" href="#pag3" role="tab" aria-controls="My interests">My interests</a>
+        <li class="nav-item">
+          <a class="nav-link" id="interests-tab" data-toggle="tab" href="#interests" role="tab">Interests</a>
         </li>
       </ul>
-        <div class="tab-content">
-          <ul>
-          <% @blogs.each do |blog| %>
-            <div class="tab-pane fade show active" id="<%= update_id(blog) %>" role="tabpanel">
-                <%= link_to blog_path(blog), style: "text-decoration: none" do %>
-              <div class="card">
-                <li style="list-style: none;">
-                  <!-- <img class="card-img-top" src="bp1.png" alt="Blog image"> -->
-                  <div class="card-body">
-                    <p class="card-text"><%= blog.title %></p>
-                  </div>
-                </li>
-                <% end %>
-              </div>
-          </div>
-        <% end %>
-              </ul>
-      </div>
+
+      <!-- Tab panes -->
+  <div class="tab-content">
+    <% @blogs.each do |blog| %>
+      <% if blog.style == 'Code' %>
+        <div class="tab-pane fade show active" id="code" role="tabpanel">
+          <li class="tab-display">
+            <div class="card">
+              <%= blog.title %>
+            </div>
+          </li>
+        </div>
+      <% elsif blog.style == 'Personal' %>
+        <div class="tab-pane" id="byrd" role="tabpanel">
+          <li class="tab-display">
+            <div class="card">
+              <%= blog.title %>
+            </div>
+          </li>
+        </div>
+      <% else %>
+        <div class="tab-pane" id="interests" role="tabpanel">
+          <li class="tab-display">
+            <div class="card">
+              <%= blog.title %>
+            </div>
+          </li>
+        </div>
+      <% end %>
+      <% end %>
+    </div>
+  </main>
     <%= render '/shared/footer' %>
-    </main>
-  </div>
+</div>
+
+
+On the topic of death there has been considerable attention given to keeping this essential
+element shrouded. Death was given a badge of fear early on and never shook it. Why?
+Surely the act of murder or accidental death warrants terror and concern, but, death as an
+eventuality by force of time should not.
+
+I'm suggesting that when we reach the end of our journey: scared, dour, or even apathetic - we
+might consider the alternative road which to me looks strikingly similar to fulfillment. Fulfilled that
+the time we were given was correct and far be it from any forces in the universe to oppose what
+contributions we created. Our creations will remain and it is why I am no longer scared for my
+family to die of old age. The beauty of our challenge to leave an imprint is what drives us and to
+what we are ultimately remembered for (be it warmly lasting or positively poor!)
+
+Thus, if we do impose on ourselves the duty of leaving those around us better than when we
+had entered their lives -- to me, that is love.
+
+What does it mean to be a patriot if the skin burns upon entering the uniform?  What is the point of star spangled pride if one cannot enjoy the certainty
+of fairness and a glance that says, "May I help you?", instead of, "Please leave me alone".  For too long, my response and demeanor,
+have adjusted reluctantly.  However, each time I encountered a white person, I knew deep down of their fear: watched as women's hands swung swiftly
+into their man's hand
+
+
+

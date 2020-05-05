@@ -172,5 +172,17 @@
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-
 }
+
+.tab-display {
+  list-style: none;
+  text-align: center;
+  margin: 15px;
+  line-height: 8;
+}
+
+.vertical-tabs {
+  justify-self: start;
+  width: 50vw;
+}
+
