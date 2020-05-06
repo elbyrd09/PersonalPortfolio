@@ -55,6 +55,7 @@
       "footer footer footer footer";
       article {
         padding-left: 5px;
+        font-size: 14px;
       }
 }
 
@@ -69,11 +70,10 @@
   }
 
   #evan-image{
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     box-shadow: rgba(255,255,255,.2);
     transform: translate(244px, 250px);
-
   }
 
   .about-contact{
@@ -111,18 +111,14 @@
     0%{
       color: transparent;
       margin-bottom: -40px;
-      padding-left: -10px;
     }
     35%{
-      letter-spacing: 28px;
-      margin-bottom: -40px;
-      padding-left: -3px;
-
+      letter-spacing: 4px;
+      margin-left: -80px;
     }
     85%{
     letter-spacing: 4px;
     margin-bottom: -40px;
-      padding-left: -3px;
   }
 }
 
