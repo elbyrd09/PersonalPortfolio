@@ -43,11 +43,11 @@
   letter-spacing: 5px;
 }
 
-.class-nav ul li a:hover{
+.class-nav li a:hover{
   cursor: pointer;
   border-radius: 5px;
   background-color: transparent;
-  color: orange;
+  color: $orange !important;
   text-decoration: none;
 }
 

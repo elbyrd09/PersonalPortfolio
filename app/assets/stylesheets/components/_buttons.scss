@@ -4,7 +4,6 @@
   height: 40px;
   background-color: #EB9F3E;
   color: #000;
-
 }
 
 .btn-light:active {
@@ -15,3 +14,29 @@
 }
 
 
+.btn-about {
+  display: block;
+  position: fixed;
+  top: 60%;
+  left: -1;
+  left: 0;
+  font-family: "Nunito", "Helvetica", "sans-serif";
+  border-radius: 2px 10px;
+  padding: 14px;
+  width: 200px;
+  background: transparent;
+  color: #C0C0C0;
+  border-style: solid;
+  border-top: rgba(255, 255, 255, 0.4);
+  border-right: rgba(255, 255, 255, 0.4);
+  border-bottom: rgba(255, 255, 255, 0.4);
+  }
+
+.btn-about:hover {
+  text-decoration: none;
+  color: #C0C0C0;
+  border-bottom-style: solid;
+  border-bottom-color: #C0C0C0;
+  opacity: .5;
+  // width: 40%;
+}

@@ -1,6 +1,9 @@
-<div class="container" style="background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(<%= image_path 'theone.png' %>)">
-<%= render '/shared/header' %>
+<div class="container" style="background-image: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url(<%= image_path 'theone.png' %>)">
+<div>
+  <%= link_to "Learn about me", about_path, class: "btn-about"  %>
+</div>
 
+  <%= render '/shared/header' %>
     <main class="profile-card">
       <p>Motivated by a high density of creative energy and the fulfillment <br> gained from  working with individuals to reach professional milestones <br><br></p>
       <h5 class="wordCarousel"><strong>Developer, product manager, and</strong>
