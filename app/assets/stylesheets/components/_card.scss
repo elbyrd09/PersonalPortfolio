@@ -1,15 +1,15 @@
 .card-deck {
   display: flex;
   flex-row: row;
-  align-items: flex-end;
   height: 2rem;
-  position: relative;
+  position: absolute;
   margin: 0 auto;
   font-size: 8px;
-  width: 45%;
+  width: 40%;
+  left: 30%;
   p {
-    font-size: 1.3vw !important;
-    padding: 2px;
+    font-size: 1.5vw !important;
+    padding-top: 2px;
     color: #C0C0C0;
   }
 }
@@ -43,12 +43,8 @@
 }
 
   .profile-card {
-  display: grid;
-  align-content: end;
   padding: 200px 60px 0 0;
   p {
-   display: grid;
-   justify-content: end;
    text-align: right;
    font-size: 20px;
    font-weight: 3px;
