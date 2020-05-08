@@ -1,3 +1,6 @@
+// $title:  rgba(45,45,45,1);
+$outline: rgba(#fff, .4);
+
 .header {
   background-color: transparent;
   position: absolute;
@@ -6,8 +9,8 @@
   top: 0;
   z-index: 1;
   color: blue;
-  padding: 5px 30px 20px 30px;
-  h3 {
+  padding: 40px 45px 0px 22px;
+    h3 {
     letter-spacing: 5px;
   }
 }
@@ -18,18 +21,61 @@
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 10px;
 }
+
+.title-byrd{
+  position:absolute;
+  top: 50%;
+}
+
+h1 {
+ font-family: 'Nunito', sans-serif;
+ font-size: 38px;
+ text-align: center;
+ line-height: 1;
+ margin: 0;
+ transform: translate(35%, -110%);
+ color: #C0C0C0;
+ letter-spacing: .2rem;
+&:before {
+    content: attr(data-heading);
+    overflow: hidden;
+    color: $yellow;
+    width: 100%;
+    z-index: 5;
+    text-shadow: none;
+    text-align: left;
+    position: absolute;
+    left: 23%;
+    animation: flicker 7s linear infinite;
+  }
+}
+
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+    text-shadow: -1px -1px 0 rgba(#fff, .4), 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+
+
+
+// nav icons and burger menu
 
 .class-nav {
   display: flex;
   justify-content: space-around;
   width: 200px;
   margin: 0;
-  padding: 0;
   list-style: none;
-  letter-spacing: 45px;
+  letter-spacing: 35px;
   font-size: x-large;
+  padding: 15px 0px 0px 0px;
 
   #hide-nav {
     display: none;
@@ -37,7 +83,6 @@
 }
 
 .class-nav ul li {
-  padding: 10px;
   list-style-type: none;
   font-size: 22px;
   letter-spacing: 5px;
@@ -74,7 +119,7 @@
 }
 
 
-@media screen and (max-width: 762px){
+@media screen and (max-width: 800px){
    body {
     overflow-x: hidden;
    }
@@ -111,6 +156,10 @@
     .card-deck {
       display: none !important;
     }
+    .container{
+      background: fixed;
+    }
+
 }
 
 @media screen and (max-width: 560px){
@@ -146,6 +195,10 @@
     .card-deck .card {
       display: none;
     }
+    .container{
+      background-size: fixed !important;
+      height: 165vh;
+    }
 }
 
   .nav-active {
@@ -163,7 +216,7 @@
   }
 }
 
-
+// burger close button animation
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }

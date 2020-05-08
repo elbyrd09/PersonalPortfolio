@@ -1,22 +1,22 @@
-<div class="container" style="background-image: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url(<%= image_path 'theone.png' %>)">
-<div>
-  <%= link_to "Learn about me", about_path, class: "btn-about" %>
-</div>
-
+<div class="container">
   <%= render '/shared/header' %>
-    <main class="profile-card">
+    <div class="profile-card">
       <p>Motivated by a high density of creative energy and the fulfillment <br> gained from  working with individuals to reach professional milestones <br><br></p>
-      <h5 class="wordCarousel"><strong>Developer, product manager, and</strong>
-      <div>
-           <ul class="flip4">
-            <li>avid jetsetter</li>
-            <li>writer</li>
-            <li>wine geek</li>
-            <li>photographer</li>
-          </ul>
-        </h5>
-      </div>
-    </main>
+      <h5 class="wordCarousel">
+         <span><strong>Developer, product manager, and</strong></span>
+           <div>
+             <ul class="flip4">
+              <li>avid jetsetter</li>
+              <li>writer</li>
+              <li>wine geek</li>
+              <li>photographer</li>
+             </ul>
+           </div>
+       </h5>
+    </div>
     <%= render '/shared/footer' %>
+    <!-- <div> -->
+  <%= link_to "Learn about me", about_path, class: "btn-about" %>
+    <!-- </div> -->
 </div>
 
