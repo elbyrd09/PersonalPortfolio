@@ -237,12 +237,13 @@ h1 {
 .vertical-tabs {
   justify-self: start;
   width: 50vw;
+  mix-blend-mode: hard-light;
 }
 
 .tab-desc {
   padding: 20px 0px 10px 15px;
   // letter-spacing: 3px;
   font-family: 'Nunito' 'sans-serif';
-  color: rgba(255,255,255,.6);
+  color: rgba(255,255,255,.9);
   background-image: linear-gradient(to bottom, black, transparent);
 }

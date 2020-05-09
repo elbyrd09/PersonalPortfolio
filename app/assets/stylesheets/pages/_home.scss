@@ -56,21 +56,37 @@ background-size: cover;
 }
 
 .container-trans{
-  width:205vh;
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('face.png');
-  background-position:  center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px minmax(400px, 1fr) 100px 100px;
   grid-gap: 10px;
-  padding: 30px 15px 30px 30px;
+  padding: 70px 15px 30px 55px;
   grid-template-areas:
       "header header header header"
       "main main main main"
       "footer footer footer footer";
+}
+
+img.bg-img {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1364px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1364px) { /* Specific to this particular image */
+  img.bg-img {
+    left: 50%;
+    margin-left: -682px;   /* 50% */
+  }
 }
 
 .img-blog-one {
@@ -88,6 +104,7 @@ background-size: cover;
   width: 116px;
   top: -1%;
   box-shadow: 0px 2px #888888;
+  background-position: cover;
  }
 
 .container-blog{
