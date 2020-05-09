@@ -1,9 +1,9 @@
-<div class="page-content-works">
+<div class="container-trans">
+    <img src="<%= image_path('Blog1.jpg') %> " alt="myFace" class="bg-img">
     <header> <%= render '/shared/header' %>  </header>
-
-        <main class="card-work col-12 col-lg-12 col-md-10 col-sm-10">
+        <main>
           <% @works.each do |work| %>
-          <h5 class="card-header d-flex justify-content-between" style="margin-left: 5px; background-color: transparent;">
+          <h5 class="card-header d-flex justify-content-between">
             <%= work.title %>
             <span style="font-size: small; color: rgba(255,255,255,.7);">Created using the Rails framework, Ruby, CSS, JS, and HTML</span>
           </h5>
