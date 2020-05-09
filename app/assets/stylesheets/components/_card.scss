@@ -1,3 +1,35 @@
+.card-blog{
+  //positioning & style
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  background-color: transparent;
+  background-clip: border-box;
+  background-image: linear-gradient(to top, rgba(0,0,0,.6), transparent);
+  //border
+  border-bottom: .5px solid rgba(0, 0, 0, 0.4);
+  border-radius: 14px;
+  box-shadow: 2px 2px #888888;
+  //spacing
+  word-wrap: break-word;
+  padding: 40px 0px 40px 10px;
+  margin: 26px 0px;
+  width: 30em;
+  //font
+  font-size: large;
+  color: rgba(255,255,255,.8);
+}
+
+.card-blog:hover{
+  text-decoration: none;
+  color: rgba(255,255,255,.8);
+  background-image: linear-gradient(to top, rgba(0,0,0,.1), transparent);
+  box-shadow: 2px 2px rgba(230,127,56, .8);
+
+}
+
 .card-deck {
   display: flex;
   flex-row: row;

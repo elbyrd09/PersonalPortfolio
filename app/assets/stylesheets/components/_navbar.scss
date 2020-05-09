@@ -239,3 +239,10 @@ h1 {
   width: 50vw;
 }
 
+.tab-desc {
+  padding: 20px 0px 10px 15px;
+  // letter-spacing: 3px;
+  font-family: 'Nunito' 'sans-serif';
+  color: rgba(255,255,255,.6);
+  background-image: linear-gradient(to bottom, black, transparent);
+}

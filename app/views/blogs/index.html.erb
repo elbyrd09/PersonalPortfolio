@@ -17,23 +17,30 @@
       <!-- Tab panes -->
     <div class="tab-content">
       <div class="tab-pane fade show active" id="Code">
+        <p class="tab-desc">Words about the ride into the valley of code</p>
         <% @code_blogs.each do |blog| %>
-          <%= link_to blog_path(blog), class: "card" do  %>
+          <%= link_to blog_path(blog), class: "card-blog" do  %>
             <%= blog.title %>
+            <small class="text-right">Written on <%= blog.created_at.time.strftime("%B %d, %Y") %></small>
           <% end %>
         <% end %>
       </div>
       <div class="tab-pane" id="Personal" >
+        <p class="tab-desc">Personal entries: poetry and articles I've written</p>
         <% @personal_blogs.each do |blog| %>
-          <%= link_to blog_path(blog), class: "card" do  %>
+          <%= link_to blog_path(blog), class: "card-blog" do  %>
             <%= blog.title %>
+            <small class="text-right d-flex align-items-end">Written on <%= blog.created_at.time.strftime("%B %d, %Y") %></small>
           <% end %>
         <% end %>
       </div>
       <div class="tab-pane" id="Artists">
+      <p class="tab-desc">Artists and companies I admire</p>
         <% @artists_blogs.each do |blog| %>
-          <%= link_to blog_path(blog), class: "card" do  %>
+          <%= link_to blog_path(blog), class: "card-blog" do  %>
             <%= blog.title %>
+            <small class="text-right">Written on <%= blog.created_at.time.strftime("%B %d, %Y") %></small>
+            <small class="text-right">Find them on Instagram: @<%= blog.handle %></small>
           <% end %>
         <% end %>
         </li>
