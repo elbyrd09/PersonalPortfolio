@@ -65,6 +65,7 @@
   border-color: rgba(192,192,192,.7);
   background-color: transparent;
   padding-top: 10px;
+  transition: 1s ease-in;
 }
 
 .card-deck .card:hover{
@@ -75,7 +76,6 @@
   border-radius: 20px;
   border-left: none;
   border-right: none;
-  // border-top: none;
   border-bottom-width: thick;
   background-color: transparent;
 
