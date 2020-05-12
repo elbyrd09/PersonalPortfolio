@@ -52,13 +52,17 @@
   background-color: transparent !important;
 }
 
+// thought edifice and current projects hover
+
 .card-deck .card {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom-style: solid;
-  border-bottom-width: thin;
-  border-bottom-color: rgba(192,192,192,.7);
+  border-style: solid;
+  border-width: thin;
+  border-left: none;
+  border-right: none;
+  border-color: rgba(192,192,192,.7);
   background-color: transparent;
   padding-top: 10px;
 }
@@ -69,6 +73,9 @@
   font-size: x-large !important;
   transition: .5s;
   border-radius: 20px;
+  border-left: none;
+  border-right: none;
+  // border-top: none;
   border-bottom-width: thick;
   background-color: transparent;
 
