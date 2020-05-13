@@ -1,7 +1,7 @@
 //homepage and blog index background
 // also includes image placement for blog index cards
 
-.container-trans{
+.container-hompepage{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px minmax(400px, 1fr) 100px 100px;
@@ -35,23 +35,6 @@ img.bg-img {
     margin-left: -682px;
   }
 }
-
-.img-blog-one {
-  position: absolute;
-  left: 100%;
-  height: 130px;
-  width: 116px;
-  top: -1%;
-  background-position: cover;
-}
-.img-blog-two {
-  position: absolute;
-  left: 100%;
-  height: 150px;
-  width: 116px;
-  top: -1%;
-  background-position: cover;
- }
 
 
 @media screen and (max-width: 1400px){
@@ -89,7 +72,7 @@ img.bg-img {
     margin-left: -619px;
     }
     body {
-      overflow-y:hidden;
+      overflow-y: hidden;
       background-image: linear-gradient(270deg, black,#0C162C);
     }
     footer{
@@ -203,6 +186,175 @@ img.bg-img {
   }
 
 
+// blog index page
+.container-index{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px minmax(400px, 1fr) 100px 100px;
+  grid-gap: 10px;
+  padding: 70px 15px 30px 55px;
+  grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "main main main main"
+      "footer footer footer footer";
+}
+
+img.bg-img {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1364px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1364px) {
+  img.bg-img {
+    left: 50%;
+    margin-left: -682px;
+  }
+}
+
+.img-blog-one {
+  position: absolute;
+  left: 100%;
+  height: 130px;
+  width: 116px;
+  top: -1%;
+  background-position: cover;
+}
+.img-blog-two {
+  position: absolute;
+  left: 100%;
+  height: 150px;
+  width: 116px;
+  top: -1%;
+  background-position: cover;
+ }
+
+
+@media screen and (max-width: 1400px){
+
+  img.bg-img{
+    min-width: 1400px;
+    position: fixed;
+    left: 44%;
+    // top: 17%;
+    bottom: -110;
+    margin-left: -619px;
+    }
+    body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-image: linear-gradient(270deg, black,#0C162C);
+    }
+    footer{
+      justify-self: left !important;
+      align-self: normal !important;
+      margin-left: -40px !important;
+      width: 50% !important;
+    }
+
+    .card-blog{
+      font-size: 14px;
+      width: 70%;
+      margin-left: 10%;
+    }
+    .img-blog-one{
+    position: absolute;
+    left: 93%;
+    height: 102px;
+    width: 97px;
+    top: 16%;
+    }
+    .img-blog-two{
+    position: absolute;
+    left: 90%;
+    height: 138px;
+    width: 102px;
+    top: 0%;
+    }
+    .vertical-tabs{
+      width: 69%;
+    }
+  }
+
+@media screen and (max-width: 800px){
+  img.bg-img{
+    min-width: 800px;
+    position: fixed;
+    left: 44%;
+    bottom: -110;
+    margin-left: -361px;
+    }
+    body {
+      overflow-y: auto;
+      overflow-x: hidden;
+      background-image: linear-gradient(270deg, black,#0C162C);
+    }
+    footer{
+      justify-self: left;
+      align-self: normal;
+      margin-left: -40px;
+      width: 50%;
+    }
+    .vertical-tabs{
+      width: 92%;
+    }
+    .card-blog{
+      font-size: 13px;
+      width: 70%;
+      margin-left: 10%;
+    }
+    .img-blog-one{
+    position: absolute;
+    left: 93%;
+    height: 99px;
+    width: 97px;
+    top: 16%;
+    }
+    .img-blog-two{
+    position: absolute;
+    left: 90%;
+    height: 131px;
+    width: 114px;
+    top: .9%;
+    }
+  }
+
+@media screen and (max-width: 576px){
+  img.bg-img{
+    min-width: 950px;
+    position: absolute;
+    left: 44%;
+    top: 14%;
+    bottom: -110;
+    margin-left: -319px;
+    }
+    body {
+      overflow-x: hidden;
+      background-image: linear-gradient(270deg, black,#0C162C);
+    }
+    footer{
+      justify-self: left;
+      align-self: normal;
+      margin-left: -40px;
+      width: 50% ;
+    }
+
+    .vertical-tabs {
+      justify-self: center;
+      width: 50%;
+      z-index: 1;
+    }
+  }
 
 // blog show page
 

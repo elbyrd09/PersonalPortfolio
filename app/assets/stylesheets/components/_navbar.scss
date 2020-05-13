@@ -237,14 +237,22 @@ h1 {
 }
 
 .vertical-tabs {
-  justify-self: start;
-  width: 50vw;
-  mix-blend-mode: hard-light;
+  justify-self: center;
+  width: 50%;
+  z-index: 1;
+}
+
+.nav{
+  justify-content: center;
+
+}
+.nav-tabs{
+  border-bottom: none !important;
 }
 
 .tab-desc {
   padding: 20px 0px 10px 15px;
-  // letter-spacing: 3px;
+  text-align: center;
   font-family: 'Nunito' 'sans-serif';
   color: rgba(255,255,255,.9);
   background-image: linear-gradient(to bottom, black, transparent);
