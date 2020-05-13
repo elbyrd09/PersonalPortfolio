@@ -1,3 +1,16 @@
+
+.card{
+  background-color: rgba(0,0,0, .2);
+  z-index: 1;
+  width: 50%;
+  display: inline-flex;
+  text-align: end;
+  left: 40%;
+  border-radius: 8px;
+
+}
+
+//cards for blog index page
 .card-blog{
   //positioning & style
   position: relative;
@@ -30,15 +43,15 @@
 
 }
 
+// class containing thought edifice and current projects
 .card-deck {
+  display: -webkit-box;
   display: flex;
   flex-row: row;
   height: 2rem;
-  position: absolute;
-  margin: 0 auto;
+  margin: -4px 176px 1px 19px;
   font-size: 8px;
-  width: 40%;
-  left: 30%;
+  width: 37%;
   p {
     font-size: 1.5vw !important;
     padding-top: 2px;
@@ -81,6 +94,7 @@
 
 }
 
+// profile-card is used to display the text for the homepage
   .profile-card {
   padding: 30px 60px 0 0;
    mix-blend-mode: hard-light;
@@ -103,143 +117,32 @@
     border-color: rgb(255,140,0);
   }
 
-
-
-  .card-body-works {
+//card bootstrap addition, no overrides
+  .card-header {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2vw;
-    width: 90%;
-    padding: 10px;
-    color: white;
-    margin-left: 15px;
-    margin-top: 10px;
-    line-height: 30px;
-
-  }
+    align-items: center;
+    color: orange;
+    }
 
   .card-body {
-    display: grid;
-    text-align: center;
-    width: 50vh;
-    padding: 10px;
-    color: white;
-    grid-column: 1 / 3;
-    list-style-type: none;
-  }
-
-  .card-body2 {
-    display: grid;
-    text-align: center;
-    width: 50vh;
-    padding: 10px;
-    color: white;
-    grid-column: 4 / 6;
-    grid-row-start: 1;
-    list-style-type: none;
-  }
-
-  .card-body3 {
-    display: grid;
-    text-align: center;
-    width: 50vh;
-    padding: 10px;
-    color: white;
-    grid-column: 7 / 9;
-    grid-row-start: 1;
-    list-style-type: none;
-  }
-
-  .card-body li {
-    background-color: rgba(0,0,0, .5);
-    padding: 40px;
-    border-radius: 25%;
-    margin-bottom: 15px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(255,255,255,.5);
-    color: white;
-  }
-
-  .card-body li:hover {
-    background-color: rgba(0,0,0,.2);
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-    transition: .2s;
-  }
-
-.card-body2 li {
-    background-color: rgba(0,0,0,.5);
-    padding: 40px;
-    border-radius: 25%;
-    margin-bottom: 15px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(255,255,255,.5);
-    color: white;
-  }
-
-  .card-body2 li:hover {
-    background-color: rgba(0,0,0,.2);
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-    transition: .2s;
-  }
-
-.card-body3 li {
-    background-color: rgba(0,0,0, .5);
-    padding: 40px;
-    border-radius: 25%;
-    margin-bottom: 15px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(255,255,255,.5);
-    color: white;
-  }
-
-  .card-body3 li:hover {
-    background-color: rgba(0,0,0,.2);
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-    transition: .2s;
-  }
-
-  .card-work {
     font-size: 1.2vw;
-    grid-column: 2 / span 7;
-    letter-spacing: 2px;
-    text-align: start;
-    background-color: rgba(192,192, 192, .6);
-    border-color: white;
-    border-radius: 20px;
-    color: white;
-    position: relative;
-    display: -webkit-box;
-    display: flex;
-    align-items: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    line-height: 12px;
-  }
-
-  .card-footer {
-    padding: 0.75rem 1.25rem;
-    background-color: rgba(0, 0, 0, 0.03);
-    border-top: 1px solid rgba(0, 0, 0, 0.125);
-    background-color: transparent;
-    mix-blend-mode: screen;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    .footer-icons {
-      display: flex;
-      align-content: end;
-      flex-direction: column;
-      line-height: 35px;
-
+    line-height: 30px;
+    p{
+      text-align:center;
+      color: rgba(255,255,255, .8);
     }
   }
+
+    .icons-card-footer a {
+      display: block;
+      line-height: 35px;
+      color: orange !important;
+      letter-spacing: 3px;
+  }
+
+    .icons-card-footer a:hover {
+      color: rgba(255,255,255,.8) !important;
+    }
 
 

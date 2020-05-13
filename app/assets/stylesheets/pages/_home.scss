@@ -569,6 +569,124 @@ img.bg-img {
     right: 65%;
   }
 }
+
+// project index page - uses same container-index as blogs but has different components and responsive needs
+
+#project-upc{
+  line-height: 18px;
+  color: rgba(255,255,255,.7);
+  grid-row-start: 4;
+  grid-column-start: 2;
+  z-index: 1;
+  margin: 45px 10% 60% 20%;
+  h5{
+    color: orange;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .carousel-inner{
+    transform: translate(91px, 22px);
+  }
+  img.bg-img{
+    min-width: 1200px;
+    position: fixed;
+    left: 44%;
+    bottom: -110;
+    margin-left: -525px;
+    }
+  .card-header{
+    font-size: 1rem;
+  }
+  body > div > main.card > div.card-footer > div {
+        font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .carousel-inner{
+    display: none;
+  }
+  img.bg-img{
+    min-width: 992px;
+    position: fixed;
+    left: 44%;
+    margin-left: -421px;
+    }
+
+  .card-body {
+    font-size: 2.2vw;
+    p{
+      margin-top: 10%;
+    }
+  }
+
+  .card-header{
+    font-size:2vw;
+    display: flex;
+    flex-direction: column;
+    line-height: 32px;
+    body > div > main.card > h5 > span{
+      font-size: 2vw;
+    }
+  }
+
+  body > div > main.card > div.card-footer > div {
+    font-size: 1.5vw;
+  }
+
+  .card{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .carousel-inner{
+    display: none;
+  }
+  img.bg-img{
+    min-width: 800px;
+    position: fixed;
+    left: 44%;
+    margin-left: -337px;
+  }
+  .card{
+    width: 73%;
+    left: 20%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .card-header{
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    line-height: 32px;
+    body > div > main.card > h5 > span{
+      font-size: 2.5vw;
+    }
+  }
+
+  body > div > main.card > div.card-footer > div {
+    font-size: 1.6vw;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .carousel-inner{
+    display: none;
+  }
+  img.bg-img{
+    min-width: 600px;
+    position: fixed;
+    left: 44%;
+    // top: 17%;
+    bottom: -110;
+    margin-left: -619px;
+    }
+}
+
+
+
 // grid area names, positioning, and styling
 
 header {

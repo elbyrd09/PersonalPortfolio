@@ -1,18 +1,18 @@
-<div class="container-trans">
-    <img src="<%= image_path('Blog1.jpg') %> " alt="myFace" class="bg-img">
+<div class="container-index">
+    <img src="<%= image_path('faceWorks.png') %> " alt="myFace" class="bg-img">
     <header> <%= render '/shared/header' %>  </header>
-        <main>
           <% @works.each do |work| %>
-          <h5 class="card-header d-flex justify-content-between">
+        <main class="card">
+          <h5 class="card-header">
             <%= work.title %>
-            <span style="font-size: small; color: rgba(255,255,255,.7);">Created using the Rails framework, Ruby, CSS, JS, and HTML</span>
+            <span style= "font-size: x-small;" "color: rgba(255,255,255,.7);">Created using the Rails framework, Ruby, CSS, JS, and HTML</span>
           </h5>
-            <div class="card-body-works">
-                <p class="card-text w-85"><%= work.content %></p>
-                <p class="card-text w-50"><%= render 'shared/carousel'%></p>
+            <div class="card-body">
+                <p class="card-text"><%= work.content %></p>
+                <p class="card-text"><%= render 'shared/carousel'%></p>
             </div>
             <div class="card-footer">
-                    <div class="footer-icons">
+                    <div class="icons-card-footer">
                       <%= link_to 'https://www.github.com/elbyrd09', target: "_blank", style: "text-decoration: none;" do %>
                       <i class="fab fa-github"></i> &nbsp See <%= work.title %>'s codebase
                     <%= link_to 'https://trello.com/b/5KlWXW7T/party-reel-2020', target: "_blank", style: "text-decoration: none;" do %>
@@ -22,6 +22,15 @@
                   </div>
               <% end %>
             </div>
+      </main>
+      <main id="project-upc">
+        <h3>Upcoming Projects</h3><br>
+        <h5>Taproot Foundation</h5>
+          <p>Volunteer programming work for 1-4 month engagements</p><br>
+        <h5>Anomalus Concept</h5>
+          <p>Freelance app build for immersive events company out of Brooklyn</p>
+          <p>E-commerce, blog implementation, and virtual event space</p><br><br>
+        <h4><span style="color: orange;">Interests in</span> philanthropic projects, entertainment, social media, healthcare blockchain, and digital security</h4>
       </main>
     <footer>
       <%= render '/shared/footer' %>
