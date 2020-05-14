@@ -41,7 +41,16 @@ img.bg-img {
 }
 
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1200px){
+  .card-deck{
+    display: -webkit-box;
+    display: flex;
+    flex-row: row;
+    height: 2rem;
+    margin: -4px 75px 1px 19px;
+    font-size: 8px;
+    width: 37%;
+  }
  .profile-card p{
   font-size: 18px;
   line-height: 25px;
@@ -90,7 +99,19 @@ img.bg-img {
     }
   }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 992px){
+  .card-deck{
+    display: -webkit-box;
+    display: flex;
+    flex-row: row;
+    height: 2rem;
+    margin: -4px 8px 1px 19px;
+    font-size: 8px;
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 768px){
   .profile-card p{
      font-size: 2.1vw;
      line-height: 22px;
@@ -123,10 +144,19 @@ img.bg-img {
     top: 14% ;
     bottom: -110;
     margin-left: -361px;
+    margin-top: 106px;
+    }
+    .card-deck{
+      display:flex;
+      flex-row: row;
+      height: 2rem;
+      margin: 3px -165px 2px -170px;
+      font-size: 8px;
+      width: 46%;
     }
     body {
-      overflow-y:hidden;
-      background-image: linear-gradient(270deg, black,#0C162C);
+      overflow-y: hidden;
+      background-image: linear-gradient(270deg, black, #0C162C);
     }
     footer{
       justify-self: left ;
@@ -136,6 +166,44 @@ img.bg-img {
     }
     .wordCarousel div li {
       margin-bottom: 43px !important ;
+    }
+    .class-nav{
+      width: 103%;
+      background-image: linear-gradient(to bottom, #0B111D, #0B111D, #0B111D, transparent);
+      top: 13vh;
+      height: 100vh;
+    }
+
+    .class-nav #hide-nav{
+      display: block;
+      position: relative;
+      top: 28%;
+      font-size: smaller;
+      font-weight: 100;
+      left: -13%;
+    }
+    body > div > header > div > nav > ul > li:nth-child(1),
+    body > div > header > div > nav > ul > li:nth-child(2){
+      padding: 29px;
+      letter-spacing: 6px;
+    }
+    body > div > header > div > nav > ul > li:nth-child(2){
+      border-bottom: solid 0.5px rgba(255,255,255,.4);
+      border-width: thin;
+      width: 63%;
+      text-align: center;
+    }
+
+    body > div > header > div > nav > ul > li:nth-child(3),
+    body > div > header > div > nav > ul > li:nth-child(4),
+    body > div > header > div > nav > ul > li:nth-child(5),
+    body > div > header > div > nav > ul > li:nth-child(6){
+    margin-inline-start: auto;
+    position: relative;
+    width: 16%;
+    padding: 9.4px;
+    top: -20%;
+    font-weight: normal;
     }
   }
 
@@ -153,7 +221,7 @@ img.bg-img {
   font-size: 4vw;
   padding: 0px;
   font-weight: 300px;
-  width: 127% ;
+  width: 133% ;
   margin-top: -20px ;
   margin-left: -13% ;
   font-weight: normal;
@@ -219,6 +287,7 @@ img.bg-img {
   left: 0;
 }
 
+
 @media screen and (max-width: 1364px) {
   img.bg-img {
     left: 50%;
@@ -243,11 +312,15 @@ img.bg-img {
   background-position: cover;
  }
 
+ .vertical-tabs{
+  z-index:0;
+ }
 
-@media screen and (max-width: 1400px){
+
+@media screen and (max-width: 1200px){
 
   img.bg-img{
-    min-width: 1400px;
+    min-width: 1200px;
     position: fixed;
     left: 44%;
     // top: 17%;
@@ -290,7 +363,7 @@ img.bg-img {
     }
   }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 768px){
   img.bg-img{
     min-width: 800px;
     position: fixed;
@@ -555,13 +628,13 @@ img.bg-img {
         }
     }
    .about-contact{
-    transform: translate(-127px, 1100px);
+    display: none;
   }
   footer{
+    width: 94% !important;
     height: 0vh !important;
-    padding: 0;
-    margin-left: 20% !important;
-    width: 60% !important;
+    transform: translate(19px, 6px) !important;
+    text-align: center !important;
   }
   .text1{
     font-size: small;
@@ -587,6 +660,7 @@ img.bg-img {
 @media screen and (max-width: 1440px){
   body{
     overflow-x: hidden;
+    overflow-y: auto;
   }
   footer{
     width: 90% !important;
@@ -663,9 +737,11 @@ img.bg-img {
     margin-left: -20px !important;
     margin-top: 400px;
   }
+
 }
 
 @media screen and (max-width: 768px){
+
   .carousel-inner{
     display: none;
   }
@@ -675,10 +751,12 @@ img.bg-img {
     left: 44%;
     margin-left: -337px;
   }
+
   .card{
     width: 73%;
     left: 20%;
     background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
   }
 
   .card-header{
@@ -694,11 +772,36 @@ img.bg-img {
   body > div > main.card > div.card-footer > div {
     font-size: 1.6vw;
   }
+
   footer{
     width: 90% !important;
     margin-left: -20px !important;
     margin-top: 400px;
   }
+  .class-nav #hide-nav{
+    letter-spacing: 6px;
+    padding: 29px;
+  }
+  body > div > header > header > div > nav > ul > li:nth-child(2){
+    border-bottom: solid 0.5px rgba(255,255,255,.4);
+    border-width: thin;
+    width: 63%;
+    text-align: center;
+  }
+
+  body > div > header > header > div > nav > ul > li:nth-child(3),
+  body > div > header > header > div > nav > ul > li:nth-child(4),
+  body > div > header > header > div > nav > ul > li:nth-child(5),
+  body > div > header > header > div > nav > ul > li:nth-child(6){
+  margin-inline-start: auto;
+  position: relative;
+  width: 16%;
+  padding: 9.4px;
+  top: -20%;
+  font-weight: normal;
+  }
+
+
 }
 
 @media screen and (max-width: 576px){
@@ -713,6 +816,7 @@ img.bg-img {
     width: 128%;
     margin: 30px 20px 30px -101px;
   }
+
   img.bg-img{
     min-width: 900px;
     position: fixed;
@@ -721,14 +825,17 @@ img.bg-img {
     margin-left: -224px;
     opacity: .2;
     }
+
   .card{
     width: 92%;
     left: -2%;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index:0;
     p{
       font-size: 2.8vw;
     }
   }
+
 
   .card-header{
     font-size: 2.8vw;
