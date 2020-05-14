@@ -584,6 +584,17 @@ img.bg-img {
   }
 }
 
+@media screen and (max-width: 1440px){
+  body{
+    overflow-x: hidden;
+  }
+  footer{
+    width: 90% !important;
+    margin-left: 40% !important;
+    margin-top: 500px;
+  }
+}
+
 @media screen and (max-width: 1200px){
   .carousel-inner{
     transform: translate(91px, 22px);
@@ -601,6 +612,11 @@ img.bg-img {
   body > div > main.card > div.card-footer > div {
         font-size: 0.8em;
   }
+  footer{
+    width: 90% !important;
+    margin-left: -20px !important;
+    margin-top: 400px;
+  }
 }
 
 @media screen and (max-width: 992px){
@@ -613,6 +629,10 @@ img.bg-img {
     left: 44%;
     margin-left: -421px;
     }
+
+  #project-upc{
+    width: 75%;
+  }
 
   .card-body {
     font-size: 2.2vw;
@@ -637,6 +657,11 @@ img.bg-img {
 
   .card{
     width: 60%;
+  }
+  footer{
+    width: 90% !important;
+    margin-left: -20px !important;
+    margin-top: 400px;
   }
 }
 
@@ -669,20 +694,62 @@ img.bg-img {
   body > div > main.card > div.card-footer > div {
     font-size: 1.6vw;
   }
+  footer{
+    width: 90% !important;
+    margin-left: -20px !important;
+    margin-top: 400px;
+  }
 }
 
 @media screen and (max-width: 576px){
   .carousel-inner{
     display: none;
   }
+
+  #project-upc{
+    color: rgba(255, 255, 255, 0.7);
+    grid-row-start: 4;
+    z-index: 1;
+    width: 128%;
+    margin: 30px 20px 30px -101px;
+  }
   img.bg-img{
-    min-width: 600px;
+    min-width: 900px;
     position: fixed;
     left: 44%;
-    // top: 17%;
     bottom: -110;
-    margin-left: -619px;
+    margin-left: -224px;
+    opacity: .2;
     }
+  .card{
+    width: 92%;
+    left: -2%;
+    background-color: rgba(0, 0, 0, 0.8);
+    p{
+      font-size: 2.8vw;
+    }
+  }
+
+  .card-header{
+    font-size: 2.8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 32px;
+  body > div > main.card > h5 > span{
+    font-size: 2.8vw;
+    }
+  }
+
+  body > div > main.card > div.card-footer > div {
+    font-size: 1.9vw;
+  }
+  footer{
+    height: 0vh;
+    padding: 0;
+    width: 79% !important;
+    transform: translate(25px, 256px);
+  }
 }
 
 
