@@ -93,9 +93,9 @@ h1 {
 
 // 2nd grouping of the thought edifice and current projects
 // is hidden to then be used in the burger menu
-  #hide-nav {
-    display: none;
-  }
+#hide-nav {
+  display: none;
+}
 
 
 // burger hidden until 768px
@@ -123,7 +123,8 @@ h1 {
 
 @media screen and (max-width: 768px){
    .class-nav {
-    width: 103%;
+    display: none;
+    width: 110%;
     background-image: linear-gradient(to bottom, #0B111D, #0B111D, #0B111D);
     height: 100vh;
     padding: 0;
@@ -133,34 +134,28 @@ h1 {
 
     .class-nav #hide-nav{
       display: block;
+      width: 100%;
       position: relative;
       top: 38%;
       font-size: smaller;
       font-weight: 100;
-      // left: -13%;
+      padding: 0px 0px 0px 150px;
     }
 
     body > div > header > div > nav > ul > li:nth-child(1),
     body > div > header > div > nav > ul > li:nth-child(2){
-      padding: 20px;
-      letter-spacing: 10px;
+      padding: 29px;
+      letter-spacing: 6px;
       border-bottom: solid 0.5px rgba(255,255,255,.4);
       border-width: thin;
-      width: 100%;
-      text-align: center;
     }
 
     body > div > header > div > nav > ul > li:nth-child(3),
     body > div > header > div > nav > ul > li:nth-child(4),
     body > div > header > div > nav > ul > li:nth-child(5),
     body > div > header > div > nav > ul > li:nth-child(6){
-      width: 100%;
-      padding: 9.4px;
-      font-weight: normal;
-      position: relative;
-      left: -46%;
-      top: 20%;
-    }
+      padding: 39px;
+      letter-spacing: 10px;
     }
 
     .class-nav li {
@@ -189,6 +184,8 @@ h1 {
       background: fixed;
     }
 
+}
+
 @media screen and (max-width: 576px){
     .container{
       height: 165vh;
@@ -199,8 +196,8 @@ h1 {
     transform: translateX(0%);
     display: flex;
     align-items: center;
-    width: 107%;
-    margin-left: -12px;
+    width: 130%;
+    margin-left: -29px;
   }
 
   @keyframes navLinkFade{

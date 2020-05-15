@@ -13,6 +13,10 @@
       "main main main main"
       "footer footer footer footer";
 }
+  body{
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 
 .burger{
   right: 9%;
@@ -37,10 +41,6 @@
     left:0;
   }
 
-  body{
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
 }
 
 @media screen and (max-width: 1200px){
@@ -74,9 +74,7 @@
      margin-left: -3.5em;
      font-weight: normal;
     }
-    body {
-      background-image: linear-gradient(270deg, black,#0C162C);
-    }
+
     footer{
       justify-self: left;
       align-self: normal;
@@ -89,11 +87,9 @@
 }
 
 @media screen and (max-width: 992px){
-
   img.bg-img {
     min-width: 992px;
   }
-
 }
 
 @media screen and (max-width: 768px){
@@ -105,7 +101,6 @@
     width: 46%;
   }
 }
-
 @media screen and (max-width: 576px){
   img.bg-img {
     min-width: 576px;
@@ -115,17 +110,17 @@
     line-height: 25px;
     text-align: center;
     padding: 2px;
-    margin-top: -100px ;
-    width: 91% ;
-    margin-left: 6% ;
+    margin-top: -100px;
+    width: 91%;
+    margin-left: 6%;
   }
   .profile-card h5{
     font-size: 4vw;
     padding: 0px;
     font-weight: 300px;
-    width: 133% ;
-    margin-top: -20px ;
-    margin-left: -13% ;
+    width: 133%;
+    margin-top: -20px;
+    margin-left: -13%;
     font-weight: normal;
     }
 
@@ -134,8 +129,7 @@
     width: 50%;
     }
   .wordCarousel div li {
-    margin-bottom: !important;
-    font-size: large ;
+    font-size: large;
     }
 }
 
@@ -177,11 +171,6 @@
 
 
 @media screen and (max-width: 1200px){
-    body {
-    overflow-y: auto;
-    overflow-x: hidden;
-    background-image: linear-gradient(270deg, black,#0C162C);
-    }
     footer{
       justify-self: left;
       align-self: normal;
@@ -195,18 +184,18 @@
       margin-left: 10%;
     }
     .img-blog-one{
-    position: absolute;
-    left: 93%;
-    height: 102px;
-    width: 97px;
-    top: 16%;
+      position: absolute;
+      left: 93%;
+      height: 102px;
+      width: 97px;
+      top: 16%;
     }
     .img-blog-two{
-    position: absolute;
-    left: 90%;
-    height: 138px;
-    width: 102px;
-    top: 0%;
+      position: absolute;
+      left: 90%;
+      height: 138px;
+      width: 102px;
+      top: 0%;
     }
     .vertical-tabs{
       width: 69%;
@@ -214,75 +203,40 @@
   }
 
 @media screen and (max-width: 768px){
-    body {
-      overflow-y: auto;
-      overflow-x: hidden;
-      background-image: linear-gradient(270deg, black,#0C162C);
-    }
-    footer{
-      justify-self: left;
-      align-self: normal;
-      margin-left: -40px;
-      width: 50%;
-    }
-    .vertical-tabs{
-      width: 92%;
-    }
     .card-blog{
       font-size: 13px;
-      width: 70%;
-      margin-left: 10%;
     }
     .img-blog-one{
-    position: absolute;
-    left: 93%;
     height: 99px;
-    width: 97px;
-    top: 16%;
     }
     .img-blog-two{
-    position: absolute;
-    left: 90%;
     height: 131px;
     width: 114px;
     top: .9%;
     }
+    .vertical-tabs{
+      width: 92%;
+    }
   }
 
 @media screen and (max-width: 576px){
-    body {
-        overflow-y: auto;
-        overflow-x: hidden;
-        background-image: linear-gradient(270deg, black,#0C162C);
-      }
-    footer{
-        justify-self: left;
-        align-self: normal;
-        margin-left: -40px;
-        width: 50%;
-      }
-      .vertical-tabs{
-        width: 102%;
-      }
-      .card-blog{
-        font-size: 13px;
-        width: 76%;
-        margin-left: 2%;
-      }
-      .img-blog-one{
-        position: absolute;
-        left: 93%;
-        height: 99px;
-        width: 97px;
-        top: 15%;
-      }
-      .img-blog-two{
-        position: absolute;
-        left: 90%;
-        height: 131px;
-        width: 114px;
-        top: -0.1%;
-      }
+    .card-blog{
+      font-size: 13px;
+      width: 76%;
+      margin-left: 2%;
+    }
+    .img-blog-one{
+      height: 99px;
+      top: 15%;
+    }
+    .img-blog-two{
+      height: 131px;
+      width: 114px;
+      top: -0.1%;
+    }
+    .vertical-tabs{
+      width: 102%;
+    }
   }
 
 // blog show page
@@ -303,8 +257,8 @@
 
 @media screen and (max-width: 1440px){
 body > div > footer > footer {
-    width: 90%;
-    margin-top: 0 !important;
+  width: 90%;
+  margin-top: 0 !important;
  }
  body{
   z-index: 1;
@@ -364,7 +318,6 @@ body > div > footer > footer {
     position: absolute;
     top: 58%;
     left: 71%;
-    transform: translate(-50%, -50%);
 }
 
   .about-contact span{
@@ -409,10 +362,8 @@ body > div > footer > footer {
     transform: translate(50px, 544px);
   }
   .about-contact{
-    position: absolute;
     top: 32%;
     left: 81%;
-    text-align: center;
     width: 50%;
   }
   .container-about{
@@ -438,29 +389,6 @@ body > div > footer > footer {
   #evan-image{
     transform: translate(23px, 816px);
   }
-  .about-contact{
-    position: absolute;
-    top: 32%;
-    left: 81%;
-    text-align: center;
-    width: 50%;
-  }
-  .container-about{
-    grid-template-areas:
-        "header header header header"
-        "article article article main"
-        "article article article main"
-        "footer footer footer footer";
-        article {
-          padding-left: 5px;
-          font-size: 14px;
-        }
-    }
-    .text1{
-      font-size: small;
-      text-align: end;
-      right: 14%;
-    }
 }
 
 @media screen and (max-width: 576px) {
@@ -534,11 +462,10 @@ body > div > footer > footer {
     font-size: 1rem;
   }
   body > div > main.card > div.card-footer > div {
-        font-size: 0.8em;
+    font-size: 0.8em;
   }
   footer{
-    width: 90% !important;
-    margin-left: -20px !important;
+    margin-left: -20px;
     margin-top: 400px;
   }
 }
@@ -564,10 +491,10 @@ body > div > footer > footer {
     display: flex;
     flex-direction: column;
     line-height: 32px;
-    body > div > main.card > h5 > span{
-      font-size: 2vw;
-    }
+  body > div > main.card > h5 > span{
+    font-size: 2vw;
   }
+}
 
   body > div > main.card > div.card-footer > div {
     font-size: 1.5vw;
@@ -576,12 +503,6 @@ body > div > footer > footer {
   .card{
     width: 60%;
   }
-  footer{
-    width: 90% !important;
-    margin-left: -20px !important;
-    margin-top: 400px;
-  }
-
 }
 
 @media screen and (max-width: 768px){
@@ -599,44 +520,13 @@ body > div > footer > footer {
 
   .card-header{
     font-size: 2.5vw;
-    display: flex;
-    flex-direction: column;
-    line-height: 32px;
-    body > div > main.card > h5 > span{
-      font-size: 2.5vw;
+   body > div > main.card > h5 > span{
+    font-size: 2.5vw;
     }
   }
 
   body > div > main.card > div.card-footer > div {
     font-size: 1.6vw;
-  }
-
-  footer{
-    width: 90% !important;
-    margin-left: -20px !important;
-    margin-top: 400px;
-  }
-  .class-nav #hide-nav{
-    letter-spacing: 6px;
-    padding: 29px;
-  }
-  body > div > header > header > div > nav > ul > li:nth-child(2){
-    border-bottom: solid 0.5px rgba(255,255,255,.4);
-    border-width: thin;
-    width: 63%;
-    text-align: center;
-  }
-
-  body > div > header > header > div > nav > ul > li:nth-child(3),
-  body > div > header > header > div > nav > ul > li:nth-child(4),
-  body > div > header > header > div > nav > ul > li:nth-child(5),
-  body > div > header > header > div > nav > ul > li:nth-child(6){
-  margin-inline-start: auto;
-  position: relative;
-  width: 16%;
-  padding: 9.4px;
-  top: -20%;
-  font-weight: normal;
   }
 }
 
