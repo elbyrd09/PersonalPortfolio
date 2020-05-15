@@ -24,7 +24,7 @@
   display: block;
   position: fixed;
   top: 88.4%;
-  left: 56%;
+  left: 68%;
   padding: 14px;
   text-align: center;
   width: 150px;
@@ -32,10 +32,10 @@
   font-family: "Nunito", "Helvetica", "sans-serif";
   border-radius: 10px 10px;
   background: transparent;
-  color: #C0C0C0;
-  border-style: solid;
+  color: $white;
+  border-bottom-style: solid;
   border-left-style: none;
-  border-color: rgba(230, 127, 56, 0.1);
+  border-bottom-color: rgba(230, 127, 56, 0.1);
   opacity: 0;
   //animation
   animation-name: btn;
