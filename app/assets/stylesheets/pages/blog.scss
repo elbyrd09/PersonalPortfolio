@@ -1,0 +1,68 @@
+.photo-blog-1{
+  float: right;
+  margin-left: 50%;
+  box-shadow: 0 10px 10px -5px;
+  border-radius: 25%;
+  border-left: solid 3px white;
+  height: 180px;
+  width: 180px;
+}
+
+.photo-blog-2{
+  float: top;
+  margin-bottom: 5%;
+  box-shadow: 0 10px 10px -5px;
+  border-radius: 25%;
+  border-bottom: solid 3px white;
+  height: 180px;
+  width: 180px;
+ }
+
+.photo-blog-3{
+  float: left;
+  margin-right: 50%;
+  margin-top: 5%;
+  box-shadow: 0 10px 10px -5px;
+  border-radius: 25%;
+  border-right: solid 3px white;
+  height: 180px;
+  width: 180px;
+}
+
+.photo-blog-4{
+  float: bottom;
+  margin-left: 81%;
+  margin-top: -20%;
+  box-shadow: 0 10px 10px -5px;
+  border-radius: 25%;
+  border-top: solid 3px white;
+  height: 180px;
+  width: 180px;
+}
+
+.blog-show-desc{
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 60px;
+}
+
+.blog-article{
+  margin-left: 18%;
+  margin-top: 4%;
+  width: 67%;
+}
+
+.blog-non-desc{
+ display: grid;
+ grid-row: 2 / 3;
+ grid-column: 1 / 6;
+ text-align: justify;
+ letter-spacing: 3px;
+ line-height: 30px;
+ color: white;
+ z-index: 1;
+ margin-left: 10%;
+ margin-top: 15%;
+}
+

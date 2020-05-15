@@ -1,13 +1,21 @@
 <div class="container-blog">
   <%= render '/shared/header' %>
-      <article class="col-12 col-lg-12 col-md-8 col-sm-12">
-        <h3><%= @blog.title %></h3>
-        <p><%= @blog.content %></p>
-      </article>
-    <main class="text-center col-12 col-lg-12 col-md-12 col-sm-12">
-      <%= link_to "Back to Thought Edifice", blogs_path, class: 'btn btn-primary'  %>
-      <br><br>
-    </main>
-     <footer><%= render '/shared/footer' %></footer>
+    <img src="<%= image_path('faceBlog.png') %> " alt="myFace" class="bg-img">
+        <% if @blog.style === "Artists" %>
+          <article class="blog-article">
+            <img src="<%= image_path "#{@blog.handle}/1.png" %>"  alt="blg-img" class= "photo-blog-1" width="150" height="150">
+            <img src="<%= image_path "#{@blog.handle}/2.png" %>"  alt="blg-img" class= "photo-blog-2" width="150" height="150">
+            <!-- add cooler image here for title-->
+            <p class="blog-show-desc"><%= @blog.content %></p>
+            <img src="<%= image_path "#{@blog.handle}/3.png" %>"  alt="blg-img" class= "photo-blog-3" width="150" height="150">
+            <img src="<%= image_path "#{@blog.handle}/4.png" %>"  alt="blg-img" class= "photo-blog-4" width="150" height="150">
+       <% else %>
+          <p class="blog-non-desc"><%= @blog.content %></p>
+       <% end %>
+       <%= link_to "Back to Thought Edifice", blogs_path, class: 'btn btn-primary' %>
+        </article>
+      <footer>
+        <%= render '/shared/footer' %>
+      </footer>
 </div>
 

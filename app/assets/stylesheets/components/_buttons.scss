@@ -10,7 +10,13 @@
   background-color: #1B7FF6;
   color: #fff;
   border-width: 3px;
+}
 
+.btn-primary{
+ position: relative;
+ right: -40%;
+ border-radius: 20px;
+ padding: 15px;
 }
 
 
@@ -45,8 +51,6 @@
   transform: scale(.9,.9);
   text-decoration: none;
   color: #C0C0C0;
-  // width: 10%;
-
 }
 
 @keyframes btn{
