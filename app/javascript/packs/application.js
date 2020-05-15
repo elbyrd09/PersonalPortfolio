@@ -16,7 +16,7 @@
 // const imagePath = (name) => images(name, true)
 
 import "bootstrap";
-// import "jquery";
+import "jquery";
 
 import { navSlide } from 'packs/nav.js';
 
