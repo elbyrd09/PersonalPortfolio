@@ -135,11 +135,11 @@ h1 {
     .class-nav #hide-nav{
       display: block;
       width: 100%;
-      position: relative;
+      // position: relative;
       top: 38%;
-      font-size: smaller;
+      font-size: 2.7vw;
       font-weight: 100;
-      padding: 0px 0px 0px 150px;
+      padding: 400px 0px 0px 150px;
     }
 
     body > div > header > div > nav > ul > li:nth-child(1),
@@ -154,8 +154,13 @@ h1 {
     body > div > header > div > nav > ul > li:nth-child(4),
     body > div > header > div > nav > ul > li:nth-child(5),
     body > div > header > div > nav > ul > li:nth-child(6){
-      padding: 39px;
-      letter-spacing: 10px;
+      margin-inline-start: auto;
+      width: 100%;
+      letter-spacing: 0;
+      font-weight: normal;
+      position: relative;
+      right: 40%;
+      top: 12%;
     }
 
     .class-nav li {
@@ -196,8 +201,30 @@ h1 {
     transform: translateX(0%);
     display: flex;
     align-items: center;
-    width: 130%;
+    width: 132%;
     margin-left: -29px;
+  }
+
+
+  body > div > header > div > nav > ul > li:nth-child(1),
+  body > div > header > div > nav > ul > li:nth-child(2){
+    padding: 29px;
+    letter-spacing: 6px;
+    border-bottom: solid 0.5px rgba(255,255,255,.4);
+    border-width: thin;
+  }
+
+  body > div > header > div > nav > ul > li:nth-child(3),
+  body > div > header > div > nav > ul > li:nth-child(4),
+  body > div > header > div > nav > ul > li:nth-child(5),
+  body > div > header > div > nav > ul > li:nth-child(6){
+    margin-inline-start: auto;
+    width: 100%;
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    right: 40%;
+    top: 12%;
   }
 
   @keyframes navLinkFade{
