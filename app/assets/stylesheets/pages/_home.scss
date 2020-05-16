@@ -13,34 +13,32 @@
       "main main main main"
       "footer footer footer footer";
 }
+
   body{
     overflow-y: auto;
     overflow-x: hidden;
   }
 
 .burger{
-  right: 9%;
+  right: 15%;
 }
 
 // media queries for background-images
 @media screen and (max-width: 1440px){
 
   img.bg-img {
-    /* Set rules to fill background */
     min-height: 100%;
     min-width: 1440px;
-
-    /* Set up proportionate scaling */
     width: 100%;
     height: auto;
-
-    /* Set up positioning */
     position: fixed;
-    // margin-left: -60px;
     top: 0;
-    left:0;
+    left: 0;
   }
-
+  .wordCarousel div li {
+    margin-bottom: 43px;
+    margin-left: -1.2em;
+  }
 }
 
 @media screen and (max-width: 1200px){
@@ -48,21 +46,13 @@
   img.bg-img {
     min-width: 1200px;
   }
-  .card-deck{
-    display: flex;
-    flex-row: row;
-    height: 2rem;
-    margin: -4px 75px 1px 19px;
-    font-size: 8px;
-    width: 37%;
-  }
  .profile-card p{
     font-size: 1em;
     line-height: 1.5em;
     text-align: right;
     padding: 12px;
     margin-top: -4em;
-    width: 65%;
+    width: 67%;
     margin-left: 35%;
   }
   .profile-card h5{
@@ -76,13 +66,7 @@
     }
 
     footer{
-      justify-self: left;
-      align-self: normal;
-      margin-left: -40px;
-      width: 50%;
-    }
-    .wordCarousel div li {
-      margin-bottom: 43px;
+      display: none;
     }
 }
 
@@ -101,36 +85,107 @@
     width: 46%;
   }
 }
+
 @media screen and (max-width: 576px){
   img.bg-img {
     min-width: 576px;
   }
   .profile-card p {
-    font-size: 2.3vw;
+    font-size: 2.7vw;
     line-height: 25px;
     text-align: center;
     padding: 2px;
     margin-top: -100px;
-    width: 91%;
+    width: 100%;
     margin-left: 6%;
   }
-  .profile-card h5{
+  .profile-card h5 {
     font-size: 4vw;
     padding: 0px;
     font-weight: 300px;
-    width: 133%;
+    width: 155%;
     margin-top: -20px;
     margin-left: -13%;
     font-weight: normal;
     }
 
-  footer{
-    margin-left: -40px;
-    width: 50%;
-    }
   .wordCarousel div li {
+    color: #ffa500;
+    font-weight: 100;
     font-size: large;
+    margin-left: -29%;
+    height: 45px;
+    margin-bottom: 45px;
     }
+}
+
+// rotating word carousel for homepage
+.wordCarousel {
+    font-size: 28px;
+    font-weight: 100;
+    color: rgb(192,192,192);
+    display: flex;
+    justify-content: flex-end;
+    div {
+        overflow: hidden;
+        position: relative;
+        float: right;
+        height: 65px;
+        padding-top: 10px;
+        margin-top: -10px;
+
+        li {
+            color: #ffa500;
+        //     font-weight: 700;
+        //     font-size: x-large;
+            padding: 0;
+            height: 45px;
+            margin-bottom: 45px;
+          }
+        }
+    }
+
+
+.flip4 {
+  list-style-type: none;
+
+}
+
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 14s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -90px;  }
+    50% { margin-top: -90px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
 }
 
 
@@ -272,161 +327,6 @@ body > div > footer > footer {
 
 }
 
-
-// about me page
-
-.container-about{
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(to bottom, #333 50%, #1B7FF6 75%, #1B7FF6 75%);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px minmax(400px, 1fr) 100px 100px;
-  grid-gap: 10px;
-  padding: 50px;
-  grid-template-areas:
-      "header header header header"
-      "article article main main"
-      "article article main main"
-      "footer footer footer footer";
-      article {
-        padding-left: 5px;
-        font-size: 18px;
-      }
-}
-
-  #mail-about{
-    color: orange;
-    font-weight: bolder;
-    font-family: 'Nunito' !important ;
-  }
-
-  #mail-about:hover{
-    text-decoration: none;
-    color: rgba(245,165,64,.4);
-  }
-
-  #evan-image{
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    box-shadow: rgba(255,255,255,.7);
-    transform: translate(232px, 680px);
-  }
-
-  .about-contact{
-    text-align: center;
-    position: absolute;
-    top: 58%;
-    left: 71%;
-}
-
-  .about-contact span{
-    display: block;
-  }
-
-  .text1{
-    font-size: 22px;
-    font-family: 'Nunito';
-    letter-spacing: 4px;
-    margin-bottom: 30px;
-    position: relative;
-    color: orange;
-    animation: text 2s 1;
-  }
-
-  .text2{
-    font-size: 18px;
-    color: orange;
-    font-weight: bold;
-    font-family: 'Nunito';
-    letter-spacing: 4px;
-  }
-
-  @keyframes text{
-    0%{
-      color: transparent;
-      margin-bottom: -40px;
-    }
-    35%{
-      letter-spacing: 4px;
-      margin-left: -80px;
-    }
-    85%{
-    letter-spacing: 4px;
-    margin-bottom: -40px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #evan-image{
-    transform: translate(50px, 544px);
-  }
-  .about-contact{
-    top: 32%;
-    left: 81%;
-    width: 50%;
-  }
-  .container-about{
-    grid-template-areas:
-        "header header header header"
-        "article article article main"
-        "article article article main"
-        "footer footer footer footer";
-        article {
-          padding-left: 5px;
-          font-size: 14px;
-        }
-    }
-    .text1{
-      font-size: small;
-      text-align: end;
-      right: 14%;
-
-    }
-}
-
-@media screen and (max-width: 768px) {
-  #evan-image{
-    transform: translate(23px, 816px);
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #evan-image{
-    display: none;
-  }
-  .container-about{
-    grid-template-areas:
-        "header header header header"
-        "article article article article"
-        "article article article article"
-        "footer footer footer footer";
-        article {
-          padding-left: 2px;
-          font-size: 12px;
-          text-align: center;
-        }
-    }
-   body > div > main.about-contact{
-    position: absolute;
-    top: 231%;
-    left: 59%;
-    text: left;
-    width: 64%;
-    color: orange;
-  }
-  body > div > footer{
-    width: 94% !important;
-    height: 0vh !important;
-    transform: translate(19px, 6px) !important;
-    text-align: center !important;
-  }
-  body > div > main.about-contact > span{
-    font-size: normal;
-    text-align: left;
-  }
-}
-
 // project index page - uses same container-index as blogs but has different components and responsive needs
 
 #project-upc{
@@ -457,7 +357,6 @@ body > div > footer > footer {
   .carousel-inner{
     transform: translate(91px, 22px);
   }
-
   .card-header{
     font-size: 1rem;
   }
@@ -486,17 +385,17 @@ body > div > footer > footer {
     }
   }
 
-  .card-header{
+ .card-header{
     font-size:2vw;
     display: flex;
     flex-direction: column;
     line-height: 32px;
   body > div > main.card > h5 > span{
     font-size: 2vw;
-  }
-}
+   }
+ }
 
-  body > div > main.card > div.card-footer > div {
+ body > div > main.card > div.card-footer > div {
     font-size: 1.5vw;
   }
 
@@ -577,6 +476,172 @@ body > div > footer > footer {
 }
 
 
+// about me page
+
+.container-about{
+  background: linear-gradient(to bottom, #333 50%, #1B7FF6 75%, #1B7FF6 75%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px minmax(400px, 1fr) 100px 100px;
+  grid-gap: 10px;
+  padding: 50px;
+  grid-template-areas:
+      "header header header header"
+      "article article main main"
+      "article article main main"
+      "footer footer footer footer";
+      article {
+        padding-left: 5px;
+        font-size: 18px;
+    }
+}
+
+  #mail-about{
+    color: orange;
+    font-weight: bolder;
+    font-family: 'Nunito' !important ;
+  }
+
+  #mail-about:hover{
+    text-decoration: none;
+    color: rgba(245,165,64,.4);
+  }
+
+  #evan-image{
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: rgba(255,255,255,.7);
+    transform: translate(232px, 680px);
+  }
+
+  .about-contact{
+    top: 32%;
+    width: 100%;
+  }
+
+  .about-contact span{
+    display: block;
+  }
+
+  .text1{
+    font-size: 22px;
+    font-family: 'Nunito';
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    position: relative;
+    color: orange;
+    animation: text 2s 1;
+    padding-left: 30%;
+    text-align: center;
+  }
+
+  .text2{
+    font-size: 18px;
+    color: orange;
+    font-weight: bold;
+    font-family: 'Nunito';
+    letter-spacing: 4px;
+  }
+
+  @keyframes text{
+    0%{
+      color: transparent;
+      margin-bottom: -40px;
+    }
+    35%{
+      letter-spacing: 4px;
+      margin-left: -80px;
+    }
+    85%{
+    letter-spacing: 4px;
+    margin-bottom: -40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #evan-image{
+    transform: translate(50px, 544px);
+  }
+
+  .container-about{
+    grid-template-areas:
+        "header header header header"
+        "article article article main"
+        "article article article main"
+        "footer footer footer footer";
+        article {
+          padding-left: 5px;
+          font-size: 14px;
+        }
+    }
+    .text1{
+      font-size: small;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  #evan-image{
+    transform: translate(23px, 816px);
+  }
+  // body > div.container-about > header > div > nav > div.burger{
+  //   right: -12%;
+  // }
+}
+
+@media screen and (max-width: 576px) {
+  #evan-image{
+    display: none;
+  }
+  .container-about{
+    grid-template-areas:
+        "header header header header"
+        "article article article article"
+        "article article article article"
+        "footer footer footer footer";
+        article {
+          padding-left: 2px;
+          font-size: 12px;
+          text-align: center;
+        }
+    }
+   body > div > main.about-contact{
+    position: absolute;
+    top: 251%;
+    left: 18%;
+    text: left;
+    width: 64%;
+    color: orange;
+  }
+  body > div.container-about > header{
+      background-color: transparent;
+      position: relative;
+      left: -80px;
+      top: -64px;
+      z-index: 1;
+      color: blue;
+      padding: 40px 45px 0px 30px;
+         h3 {
+         letter-spacing: 5px;
+
+     .header-content {
+       margin: 0 auto;
+       display: flex;
+       height: 100%;
+       justify-content: space-between;
+       align-items: center;
+       padding: 10px;
+       }
+     }
+  }
+
+  body > div.container-about > header > div > nav > div.burger{
+    right: -15%;
+  }
+}
+
+
+
+
 
 // grid area names, positioning, and styling
 
@@ -590,11 +655,17 @@ header {
 
 article{
   grid-area: article;
-  color: white;
-  #about-me{
+  #about-me {
     line-height: 32px;
     letter-spacing: 3px;
+    font-size: 1rem;
+    color: rgba(255,255,255,.7);
   }
+}
+
+.text-left h2{
+    font-size: 1.8rem;
+    color: orange;
 }
 
 main {
@@ -619,72 +690,3 @@ footer {
   text-decoration: none !important;
 }
 
-// rotating word carousel for homepage
-.wordCarousel {
-    font-size: 28px;
-    font-weight: 100;
-    color: rgb(192,192,192);
-    display: flex;
-    justify-content: flex-end;
-    div {
-        overflow: hidden;
-        position: relative;
-        float: right;
-        height: 65px;
-        padding-top: 10px;
-        margin-top: -10px;
-
-        li {
-            color: #ffa500;
-            font-weight: 700;
-            font-size: x-large;
-            padding: 0;
-            height: 45px;
-            margin-bottom: 45px;
-
-        }
-    }
-}
-
-.flip4 {
-  list-style-type: none;
-  padding-left: 7px;
-  padding-top: 3px;
-}
-
-.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-.flip3 { animation: flip3 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-.flip4 { animation: flip4 14s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-
-@keyframes flip2 {
-    0% { margin-top: -180px; }
-    5% { margin-top: -90px;  }
-    50% { margin-top: -90px; }
-    55% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -270px; }
-}
-
-@keyframes flip3 {
-    0% { margin-top: -270px; }
-    5% { margin-top: -180px; }
-    33% { margin-top: -180px; }
-    38% { margin-top: -90px; }
-    66% { margin-top: -90px; }
-    71% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -270px; }
-}
-
-@keyframes flip4 {
-    0% { margin-top: -360px; }
-    5% { margin-top: -270px; }
-    25% { margin-top: -270px; }
-    30% { margin-top: -180px; }
-    50% { margin-top: -180px; }
-    55% { margin-top: -90px; }
-    75% { margin-top: -90px; }
-    80% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -270px; }
-}

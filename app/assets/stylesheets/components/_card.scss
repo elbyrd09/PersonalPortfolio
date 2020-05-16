@@ -49,11 +49,10 @@
   display: flex;
   flex-row: row;
   height: 2rem;
-  margin: -4px 176px 1px 19px;
-  font-size: 8px;
-  width: 37%;
+  margin: -4px 150px 1px 0px;
+  width: 40%;
   p {
-    font-size: 1.5vw !important;
+    font-size: 1.2vw !important;
     padding-top: 2px;
     color: #C0C0C0;
   }
@@ -75,6 +74,7 @@
   border-width: thin;
   border-left: none;
   border-right: none;
+  border-top: none;
   border-color: rgba(192,192,192,.7);
   background-color: transparent;
   padding-top: 10px;
@@ -87,8 +87,6 @@
   font-size: x-large !important;
   transition: .5s;
   border-radius: 20px;
-  border-left: none;
-  border-right: none;
   border-bottom-width: thick;
   background-color: transparent;
 

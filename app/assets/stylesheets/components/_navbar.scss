@@ -2,17 +2,18 @@
 $outline: rgba(#fff, .4);
 
 .header {
- background-color: transparent;
- position: relative;
- left: -80px;
- top: -97px;
- z-index: 1;
- color: blue;
- padding: 40px 45px 0px 30px;
+  background-color: transparent;
+  position: relative;
+  left: -30px;
+  top: -83px;
+  z-index: 1;
+  color: blue;
+  padding: 40px 45px 0px 13px;
+  }
     h3 {
     letter-spacing: 5px;
   }
-}
+
 
 .header-content {
   margin: 0 auto;
@@ -20,7 +21,7 @@ $outline: rgba(#fff, .4);
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 0;
 }
 
 .title-byrd{
@@ -68,20 +69,18 @@ h1 {
 
 .class-nav {
   display: flex;
-  justify-content: space-around;
-  width: 140px;
+  width: 270%;
   margin: 0;
   list-style: none;
-  letter-spacing: 35px;
-  font-size: x-large;
+  font-size: 1.6rem;
   padding: 15px 0px 0px 0px;
 }
 
-.class-nav ul li {
-  list-style-type: none;
-  font-size: 22px;
-  letter-spacing: 5px;
-}
+// .class-nav ul li {
+//   list-style-type: none;
+//   font-size: 22px;
+//   letter-spacing: 5px;
+// }
 
 .class-nav li a:hover{
   cursor: pointer;
@@ -114,9 +113,7 @@ h1 {
 
 @media screen and (max-width: 1200px){
    .class-nav {
-    width: 150px;
-    letter-spacing: 41px;
-    justify-content: end;
+    width: 250%;
  }
 }
 
@@ -125,7 +122,7 @@ h1 {
    .class-nav {
     display: none;
     width: 110%;
-    background-image: linear-gradient(to bottom, #0B111D, #0B111D, #0B111D);
+    background-image: linear-gradient(to bottom, #0B111D, #0B111D, #0B111D, transparent);
     height: 100vh;
     padding: 0;
     transform: translateX(100%);
@@ -139,15 +136,13 @@ h1 {
       top: 38%;
       font-size: 2.7vw;
       font-weight: 100;
-      padding: 400px 0px 0px 150px;
+      padding: 402px 0px 0px 91px;
     }
 
     body > div > header > div > nav > ul > li:nth-child(1),
     body > div > header > div > nav > ul > li:nth-child(2){
-      padding: 29px;
+      padding: 9px;
       letter-spacing: 6px;
-      border-bottom: solid 0.5px rgba(255,255,255,.4);
-      border-width: thin;
     }
 
     body > div > header > div > nav > ul > li:nth-child(3),
@@ -202,30 +197,40 @@ h1 {
     display: flex;
     align-items: center;
     width: 132%;
-    margin-left: -29px;
+    margin-left: -57px;
+    height: 269vh;
+    padding-top: -17%;
+    margin-top: -43%;
+    line-height: 22px;
+  }
+
+  @media screen and (max-width: 768px){
+    body > div#container-works > header > header > div > nav > ul.nav-active{
+    transform: translateX(0%);
+    display: flex;
+    align-items: center;
+    width: 128%;
+    margin-left: -9%;
+    height: 136vh;
+    padding: 0;
+    margin-top: -30%;
+    line-height: 22px;
+    }
   }
 
 
-  body > div > header > div > nav > ul > li:nth-child(1),
-  body > div > header > div > nav > ul > li:nth-child(2){
-    padding: 29px;
-    letter-spacing: 6px;
-    border-bottom: solid 0.5px rgba(255,255,255,.4);
-    border-width: thin;
-  }
-
-  body > div > header > div > nav > ul > li:nth-child(3),
-  body > div > header > div > nav > ul > li:nth-child(4),
-  body > div > header > div > nav > ul > li:nth-child(5),
-  body > div > header > div > nav > ul > li:nth-child(6){
-    margin-inline-start: auto;
-    width: 100%;
-    letter-spacing: 0;
-    font-weight: normal;
-    position: relative;
-    right: 40%;
-    top: 12%;
-  }
+  // body > div > header > div > nav > ul > li:nth-child(3),
+  // body > div > header > div > nav > ul > li:nth-child(4),
+  // body > div > header > div > nav > ul > li:nth-child(5),
+  // body > div > header > div > nav > ul > li:nth-child(6){
+  //   margin-inline-start: auto;
+  //   width: 100%;
+  //   letter-spacing: 0;
+  //   font-weight: normal;
+  //   position: relative;
+  //   right: 40%;
+  //   top: 15%;
+  // }
 
   @keyframes navLinkFade{
     from{
