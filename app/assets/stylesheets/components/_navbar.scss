@@ -218,19 +218,12 @@ h1 {
     }
   }
 
-
-  // body > div > header > div > nav > ul > li:nth-child(3),
-  // body > div > header > div > nav > ul > li:nth-child(4),
-  // body > div > header > div > nav > ul > li:nth-child(5),
-  // body > div > header > div > nav > ul > li:nth-child(6){
-  //   margin-inline-start: auto;
-  //   width: 100%;
-  //   letter-spacing: 0;
-  //   font-weight: normal;
-  //   position: relative;
-  //   right: 40%;
-  //   top: 15%;
-  // }
+  @media screen and (max-width: 768px){
+    body > div.container-blog > header > div > nav > ul.nav-active{
+      z-index: 1;
+      margin-left: -18px;
+    }
+  }
 
   @keyframes navLinkFade{
     from{

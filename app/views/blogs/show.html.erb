@@ -7,14 +7,17 @@
             <img src="<%= image_path "#{@blog.handle}/2.png" %>"  alt="blg-img" class= "photo-blog-2" width="150" height="150">
             <!-- add cooler image here for title-->
             <p class="blog-show-desc"><%= @blog.content %></p><br>
-            <%= link_to @blog.handle, "https://www.instagram.com/#{@blog.handle}", target: "_blank", class: "insta-button"  %>
+            <div id="insta-btn">
+              <%= link_to @blog.handle, "https://www.instagram.com/#{@blog.handle}", target: "_blank", class: "insta-button"  %>
               <i class="fab fa-instagram" style="font-size: 3em;"></i>
+            </div>
             <img src="<%= image_path "#{@blog.handle}/3.png" %>"  alt="blg-img" class= "photo-blog-3" width="150" height="150">
             <img src="<%= image_path "#{@blog.handle}/4.png" %>"  alt="blg-img" class= "photo-blog-4" width="150" height="150">
        <% else %>
+          <h3 class="blog-non-title">- <%= @blog.title %> -</h3>
           <p class="blog-non-desc"><%= @blog.content %></p>
        <% end %>
-       <%= link_to "Back to Thought Edifice", blogs_path, class: 'btn btn-primary' %>
+       <%= link_to "Back to Thought Edifice", blogs_path, class: 'btn btn-light' %>
         </article>
       <footer>
         <%= render '/shared/footer' %>

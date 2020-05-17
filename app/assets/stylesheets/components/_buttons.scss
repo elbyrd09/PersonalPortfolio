@@ -1,23 +1,35 @@
 .btn-light {
+  position: absolute;
+  top: 19em;
+  left: 41%;
+  width: 20%;
+  height: 45px;
+  padding: 1em;
   border-radius: 20px;
-  width: 100%;
-  height: 40px;
-  background-color: #EB9F3E;
-  color: #000;
+  background-color: rgba(27, 127, 246, .7);
+  color: rgba(255,255,255,.7);
+  border: none;
+  font-size: .7em;
 }
 
 .btn-light:active {
   background-color: #1B7FF6;
   color: #fff;
-  border-width: 3px;
 }
 
-.btn-primary{
- position: relative;
- right: -40%;
- border-radius: 20px;
- padding: 15px;
-}
+  #insta-btn{
+    position: relative;
+    color: rgba(255,255,255,.7);
+    text-align: center;
+  }
+  #insta-btn > a {
+    color: rgba(255,255,255,.7) !important;
+    padding-right: 3px;
+  }
+  #insta-btn > a:hover {
+    color: $orange !important;
+    text-decoration: none;
+  }
 
 
 .btn-about {
@@ -57,4 +69,26 @@
   0%{ opacity: 0}
   50% {opacity: .5}
   100% { opacity: 1}
+}
+
+@media screen and (max-width: 768px){
+  #insta-btn{
+    top: -1%;
+    text-align: end;
+    left: -34%;
+  }
+}
+
+@media screen and (max-width: 576px){
+  #insta-btn{
+    top: -2%;
+    text-align: end;
+    left: 10%;
+  }
+  .btn-light{
+    width: 44%;
+    height: 37px;
+    top: 20em;
+    left: 30%;
+  }
 }
