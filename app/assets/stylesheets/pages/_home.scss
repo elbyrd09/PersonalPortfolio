@@ -19,9 +19,9 @@
     overflow-x: hidden;
   }
 
-.burger{
-  right: 15%;
-}
+// .burger{
+//   right: 15%;
+// }
 
 // media queries for background-images
 @media screen and (max-width: 1440px){
@@ -80,10 +80,7 @@
   img.bg-img {
     min-width: 768px;
   }
-  .card-deck{
-    margin: 3px -165px 2px -170px;
-    width: 46%;
-  }
+
 }
 
 @media screen and (max-width: 576px){
@@ -265,8 +262,8 @@
     height: 99px;
     }
     .img-blog-two{
-    height: 131px;
-    width: 114px;
+    height: 115px;
+    width: 103px;
     top: .9%;
     }
     .vertical-tabs{
@@ -281,13 +278,18 @@
       margin-left: 2%;
     }
     .img-blog-one{
-      height: 99px;
-      top: 15%;
+      height: 76px;
+      border-radius: 10%;
+      top: 48%;
+      left: 89%;
+      width: 72px;
     }
     .img-blog-two{
-      height: 131px;
-      width: 114px;
-      top: -0.1%;
+      height: 76px;
+      border-radius: 10%;
+      top: 48%;
+      left: 89%;
+      width: 72px;
     }
     .vertical-tabs{
       width: 102%;
@@ -638,9 +640,6 @@ body > div > footer > footer {
     right: -15%;
   }
 }
-
-
-
 
 
 // grid area names, positioning, and styling

@@ -43,7 +43,6 @@
           <%= link_to blog_path(blog), class: "card-blog" do  %>
             <%= blog.title %>
             <small class="text-right">Written on <%= blog.created_at.time.strftime("%B %d, %Y") %></small>
-            <small class="text-right">Find on Instagram @<%= blog.handle %></small>
             <img src="<%= image_path "#{blog.handle}/#{rand(1...4)}.png" %>" alt="code-random" class="img-blog-two">
           <% end %>
         <% end %>

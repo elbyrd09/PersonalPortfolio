@@ -3,16 +3,10 @@ $outline: rgba(#fff, .4);
 
 .header {
   background-color: transparent;
-  position: relative;
-  left: -30px;
-  top: -83px;
-  z-index: 1;
-  color: blue;
-  padding: 40px 45px 0px 13px;
-  }
     h3 {
     letter-spacing: 5px;
   }
+}
 
 
 .header-content {
@@ -25,8 +19,8 @@ $outline: rgba(#fff, .4);
 }
 
 .title-byrd{
-  position:absolute;
-  top: 50%;
+  position: relative;
+  width: 5em;
 }
 
 h1 {
@@ -67,20 +61,18 @@ h1 {
 
 // nav icons before entering burger menu
 
+.nav-class {
+  z-index: 1;
+}
 .class-nav {
   display: flex;
-  width: 270%;
   margin: 0;
   list-style: none;
   font-size: 1.6rem;
   padding: 15px 0px 0px 0px;
+  letter-spacing: 20px;
+  margin-top: -25%;
 }
-
-// .class-nav ul li {
-//   list-style-type: none;
-//   font-size: 22px;
-//   letter-spacing: 5px;
-// }
 
 .class-nav li a:hover{
   cursor: pointer;
@@ -109,12 +101,6 @@ h1 {
   margin: 0px 5px 5px 5px;
   background-color: #1B7FF6;
   transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 1200px){
-   .class-nav {
-    width: 250%;
- }
 }
 
 
@@ -165,8 +151,8 @@ h1 {
     .burger {
        display: block;
        position: absolute;
-       top: 70px;
-       margin-right: -20%;
+       top: 92px;
+       right: 25%;
     }
      .card-deck p{
       display: none;
@@ -186,18 +172,20 @@ h1 {
 
 }
 
-@media screen and (max-width: 576px){
-    .container{
-      height: 165vh;
-    }
-}
+// @media screen and (max-width: 576px){
+//     .container{
+//       height: 165vh;
+//     }
+// }
+
+
 
   .nav-active {
     transform: translateX(0%);
     display: flex;
     align-items: center;
-    width: 132%;
-    margin-left: -57px;
+    width: 160%;
+    margin-left: -52%;
     height: 269vh;
     padding-top: -17%;
     margin-top: -43%;
@@ -222,6 +210,18 @@ h1 {
     body > div.container-blog > header > div > nav > ul.nav-active{
       z-index: 1;
       margin-left: -18px;
+    }
+  }
+
+  @media screen and (max-width: 576px){
+    body > div.container-index > header > div > nav > ul.nav-active{
+      width: 142%;
+    }
+    .burger{
+      right: 8%;
+    }
+    #myTab{
+      width: 105%;
     }
   }
 
