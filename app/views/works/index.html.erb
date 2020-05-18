@@ -1,11 +1,11 @@
-<div class="container-index" id="container-works">
+<div class="container-project" id="container-works">
     <img src="<%= image_path('faceWorks.png') %> " alt="myFace" class="bg-img">
-    <header> <%= render '/shared/header' %>  </header>
+    <%= render '/shared/header' %>
           <% @works.each do |work| %>
         <main class="card">
           <h5 class="card-header">
             <%= work.title %>
-            <span style= "font-size: x-small;" "color: rgba(255,255,255,.7);">Created using the Rails framework, Ruby, CSS, JS, and HTML</span>
+            <span>Created using the Rails framework, Ruby, CSS, JS, and HTML</span>
           </h5>
             <div class="card-body">
                 <p class="card-text"><%= work.content %></p>
@@ -23,15 +23,15 @@
               <% end %>
             </div>
       </main>
-      <main id="project-upc">
-        <h3>Upcoming Projects</h3><br>
-        <h5>Taproot Foundation</h5>
-          <p>Volunteer programming work for 1-4 month engagements</p><br>
-        <h5>Anomalus Concept</h5>
-          <p>Freelance app build for immersive events company out of Brooklyn</p>
-          <p>E-commerce, blog implementation, and virtual event space</p><br><br>
-        <h4><span style="color: orange;">Interests in</span> philanthropic projects, entertainment, social media, healthcare blockchain, and digital security</h4>
-      </main>
+        <main id="project-upc">
+          <h3>Upcoming Projects</h3><br>
+          <h5>Taproot Foundation</h5>
+            <p>Volunteer programming work for 1-4 month engagements</p><br>
+          <h5>Anomalus Concept</h5>
+            <p>Freelance app build for immersive events company out of Brooklyn:<br>
+            E-commerce, blog implementation, and virtual event space</p><br><br>
+          <h4><span style="color: orange;">Interests in</span> philanthropic projects, entertainment, social media, healthcare blockchain, and digital security</h4>
+        </main>
     <footer>
       <%= render '/shared/footer' %>
     </footer>

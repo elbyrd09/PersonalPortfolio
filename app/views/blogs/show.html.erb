@@ -14,7 +14,7 @@
             <img src="<%= image_path "#{@blog.handle}/3.png" %>"  alt="blg-img" class= "photo-blog-3" width="150" height="150">
             <img src="<%= image_path "#{@blog.handle}/4.png" %>"  alt="blg-img" class= "photo-blog-4" width="150" height="150">
        <% else %>
-          <h3 class="blog-non-title">- <%= @blog.title %> -</h3>
+          <h3 class="blog-non-title"><%= @blog.title %></h3>
           <p class="blog-non-desc"><%= @blog.content %></p>
        <% end %>
        <%= link_to "Back to Thought Edifice", blogs_path, class: 'btn btn-light' %>

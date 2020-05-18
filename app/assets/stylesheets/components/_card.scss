@@ -126,9 +126,17 @@
 //card bootstrap addition, no overrides
   .card-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     color: orange;
+    font-size: 1.8em;
+  }
+   #container-works > main.card > h5 > span{
+      font-size: .5em;
+      text-align: center;
+      color: rgba(255,255,255,.7);
+      width: 80%;
+      margin-top: .7em;
     }
 
   .card-body {
@@ -150,5 +158,3 @@
     .icons-card-footer a:hover {
       color: rgba(255,255,255,.8) !important;
     }
-
-

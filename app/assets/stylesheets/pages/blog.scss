@@ -63,6 +63,7 @@
  color: rgba(255,255,255,.7);
  z-index: 0;
  margin: 0 auto;
+ text-align: center;
 }
 
 
@@ -74,7 +75,7 @@
  letter-spacing: 3px;
  line-height: 30px;
  color: rgba(255,255,255,.7);
- z-index: 1;
+ z-index: 0;
  margin-left: 19%;
  margin-top: 10%;
  width: 64%;
@@ -101,14 +102,16 @@
     margin-left: 17%;
     }
   .blog-non-title{
-    margin: 0;
+    margin: -16px 0px 0px -1px;
     font-size: larger;
-    text-align: center;
+    width: 95%;
+    border-top: solid .5px rgba(255,255,255,.9);
+    padding-top: 16px;
   }
   .blog-non-desc{
     text-align: right;
-    margin-left: 25%;
-    width: 68%;
+    margin-left: 15%;
+    width: 84%;
     font-size: small;
     line-height: 25px;
     padding-top: 5em;

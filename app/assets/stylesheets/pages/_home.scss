@@ -19,9 +19,12 @@
     overflow-x: hidden;
   }
 
-// .burger{
-//   right: 15%;
-// }
+  .font-title{
+  font-size: 36px;
+  text-decoration: none !important;
+  z-index: 1;
+  margin-left: -1em;
+}
 
 // media queries for background-images
 @media screen and (max-width: 1440px){
@@ -80,7 +83,9 @@
   img.bg-img {
     min-width: 768px;
   }
-
+  // .font-title{
+  //   margin-left: -4%;
+  // }
 }
 
 @media screen and (max-width: 576px){
@@ -90,11 +95,11 @@
   .profile-card p {
     font-size: 2.7vw;
     line-height: 25px;
-    text-align: center;
+    text-align: right;
     padding: 2px;
-    margin-top: -100px;
-    width: 100%;
-    margin-left: 6%;
+    width: 121%;
+    margin-left: -2%;
+    color: rgb(255,255,255);
   }
   .profile-card h5 {
     font-size: 4vw;
@@ -114,6 +119,9 @@
     height: 45px;
     margin-bottom: 45px;
     }
+  // .font-title{
+  //   margin-left: -10%;
+  // }
 }
 
 // rotating word carousel for homepage
@@ -133,8 +141,6 @@
 
         li {
             color: #ffa500;
-        //     font-weight: 700;
-        //     font-size: x-large;
             padding: 0;
             height: 45px;
             margin-bottom: 45px;
@@ -303,13 +309,12 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px minmax(400px, 1fr) 100px 100px;
   grid-gap: 10px;
-  padding: 50px 0px 55px 0px;
+  padding: 70px 15px 30px 55px;
   grid-template-areas:
       "header header header header"
       "article article article article"
       "article article article article"
       "footer footer footer footer";
-
 }
 
 @media screen and (max-width: 1440px){
@@ -326,10 +331,22 @@ body > div > footer > footer {
  body > div > img{
   position: absolute;
  }
-
 }
 
 // project index page - uses same container-index as blogs but has different components and responsive needs
+
+.container-project{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px minmax(400px, 1fr) 100px 100px;
+  grid-gap: 10px;
+  padding: 70px 15px 30px 55px;
+  grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "main main main main"
+      "footer footer footer footer";
+}
 
 #project-upc{
   line-height: 18px;
@@ -359,9 +376,6 @@ body > div > footer > footer {
   .carousel-inner{
     transform: translate(91px, 22px);
   }
-  .card-header{
-    font-size: 1rem;
-  }
   body > div > main.card > div.card-footer > div {
     font-size: 0.8em;
   }
@@ -388,13 +402,9 @@ body > div > footer > footer {
   }
 
  .card-header{
-    font-size:2vw;
     display: flex;
     flex-direction: column;
     line-height: 32px;
-  body > div > main.card > h5 > span{
-    font-size: 2vw;
-   }
  }
 
  body > div > main.card > div.card-footer > div {
@@ -419,13 +429,6 @@ body > div > footer > footer {
     z-index: 0;
   }
 
-  .card-header{
-    font-size: 2.5vw;
-   body > div > main.card > h5 > span{
-    font-size: 2.5vw;
-    }
-  }
-
   body > div > main.card > div.card-footer > div {
     font-size: 1.6vw;
   }
@@ -438,36 +441,42 @@ body > div > footer > footer {
 
   #project-upc{
     color: rgba(255, 255, 255, 0.7);
-    grid-row-start: 4;
+    grid-column: 1 / 5;
+    width: 96%;
     z-index: 1;
-    width: 128%;
-    margin: 30px 20px 30px -101px;
+    text-align: center;
+    margin-left: -5%;
+    h5, h3, h4 {
+      background-color: rgba(0,0,0,.7);
+      border-radius: 10px;
+      padding: 15px;
+    }
+    p{
+      background-color: rgba(0,0,0,.7);
+      border-radius: 10px;
+      padding: 15px;
+    }
   }
 
   .card{
-    width: 92%;
-    left: -2%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index:0;
+   width: 114%;
+   left: -13%;
+   background-color: rgba(0, 0, 0, 0.8);
+   z-index: 0;
     p{
       font-size: 2.8vw;
     }
   }
 
-
   .card-header{
-    font-size: 2.8vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 32px;
-  body > div > main.card > h5 > span{
-    font-size: 2.8vw;
-    }
   }
 
   body > div > main.card > div.card-footer > div {
-    font-size: 1.9vw;
+    font-size: 2.3vw;
   }
   footer{
     height: 0vh;
@@ -486,7 +495,7 @@ body > div > footer > footer {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px minmax(400px, 1fr) 100px 100px;
   grid-gap: 10px;
-  padding: 50px;
+  padding: 70px 15px 30px 55px;
   grid-template-areas:
       "header header header header"
       "article article main main"
@@ -585,9 +594,6 @@ body > div > footer > footer {
   #evan-image{
     transform: translate(23px, 816px);
   }
-  // body > div.container-about > header > div > nav > div.burger{
-  //   right: -12%;
-  // }
 }
 
 @media screen and (max-width: 576px) {
@@ -613,31 +619,6 @@ body > div > footer > footer {
     text: left;
     width: 64%;
     color: orange;
-  }
-  body > div.container-about > header{
-      background-color: transparent;
-      position: relative;
-      left: -80px;
-      top: -64px;
-      z-index: 1;
-      color: blue;
-      padding: 40px 45px 0px 30px;
-         h3 {
-         letter-spacing: 5px;
-
-     .header-content {
-       margin: 0 auto;
-       display: flex;
-       height: 100%;
-       justify-content: space-between;
-       align-items: center;
-       padding: 10px;
-       }
-     }
-  }
-
-  body > div.container-about > header > div > nav > div.burger{
-    right: -15%;
   }
 }
 
@@ -684,8 +665,5 @@ footer {
   mix-blend-mode: hard-light;
 }
 
-.font-title{
-  font-size: 36px;
-  text-decoration: none !important;
-}
+
 
