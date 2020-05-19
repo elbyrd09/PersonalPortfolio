@@ -17,19 +17,19 @@
   color: #fff;
 }
 
-  #insta-btn{
-    position: relative;
-    color: rgba(255,255,255,.7);
-    text-align: center;
-  }
-  #insta-btn > a {
-    color: rgba(255,255,255,.7) !important;
-    padding-right: 3px;
-  }
-  #insta-btn > a:hover {
-    color: $orange !important;
-    text-decoration: none;
-  }
+#insta-btn{
+  position: relative;
+  color: rgba(255,255,255,.7);
+  text-align: center;
+}
+#insta-btn > a {
+  color: rgba(255,255,255,.7) !important;
+  padding-right: 3px;
+}
+#insta-btn > a:hover {
+  color: $orange !important;
+  text-decoration: none;
+}
 
 
 .btn-about {
@@ -88,6 +88,7 @@
     top: -2%;
     text-align: end;
     left: 10%;
+    width: 129%;
   }
   .btn-light{
     width: 44%;
@@ -96,3 +97,4 @@
     left: 64%;
   }
 }
+
