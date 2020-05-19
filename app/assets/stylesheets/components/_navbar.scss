@@ -36,8 +36,14 @@ h1 {
     text-shadow: none;
     text-align: left;
     position: absolute;
-    left: 25%;
+    left: 24%;
     animation: flicker 7s linear infinite;
+  }
+}
+
+@media screen and(max-width: 768px){
+  h1:before{
+    left: 25%;
   }
 }
 
@@ -141,7 +147,7 @@ h1 {
     body > div > header > div > nav > ul > li:nth-child(1),
     body > div > header > div > nav > ul > li:nth-child(2){
       padding: 16px 0px 36px 0px;
-      letter-spacing: 6px;
+      letter-spacing: 2px;
       border-bottom: solid 0.5px rgba(255, 255, 255, .9);
     }
     body > div > header > div > nav > ul > li:nth-child(1):hover,
@@ -236,8 +242,11 @@ h1 {
 // tab pane positioning
 .vertical-tabs {
   justify-self: center;
-  width: 50%;
+  width: 60%;
   z-index: 1;
+}
+#personal-tab, #code-tab, #artists-tab{
+  color: $orange !important;
 }
 //description of blog tab pane on index
 .tab-desc {
