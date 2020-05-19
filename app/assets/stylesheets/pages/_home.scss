@@ -328,6 +328,9 @@ body > div > footer > footer {
  body > div > img{
   position: absolute;
  }
+ .title-byrd{
+  z-index: 1;
+ }
 }
 
 // project index page - uses same container-index as blogs but has different components and responsive needs
@@ -428,6 +431,9 @@ body > div > footer > footer {
 
   body > div > main.card > div.card-footer > div {
     font-size: 1.6vw;
+  }
+  .blog-article{
+    z-index: 0;
   }
 }
 
