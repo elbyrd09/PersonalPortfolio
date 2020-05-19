@@ -1,11 +1,9 @@
 module ClassHelper
   def update_class(item)
-    if item.style == 'Personal'
-      'card-body'
-    elsif item.style == 'Code'
-      'card-body2'
+    if item.style === 'Artists'
+      'btn btn-light'
     else
-     'card-body3'
+     'btn btn-article'
     end
   end
 end

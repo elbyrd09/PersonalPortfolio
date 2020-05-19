@@ -17,11 +17,9 @@
           <h3 class="blog-non-title"><%= @blog.title %></h3>
           <p class="blog-non-desc"><%= @blog.content %></p>
        <% end %>
-         <% if @blog.style = "Personal" || "Code" %>
-         <%= link_to "Back to Thought Edifice", blogs_path, class: 'btn btn-article' %>
-           <% else %>
-         <%= link_to "Back to Thought Edifice", blogs_path, class: 'btn btn-light' %>
-         <% end %>
+        <a href="/blogs" class="<%= update_class(@blog) %>">Back to Thought Edifice</a>
+<!--         used <a> but will research how to add a helper inside the link_to
+ -->
         </article>
       <footer>
         <%= render '/shared/footer' %>
