@@ -616,12 +616,7 @@ body > div > footer > footer {
         }
     }
    body > div > main.about-contact{
-    position: absolute;
-    left: -10%;
-    text: left;
-    width: 89%;
-    color: orange;
-    transform: translate(10px,1600px);
+    display: none;
   }
 }
 
