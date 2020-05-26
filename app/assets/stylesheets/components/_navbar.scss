@@ -205,19 +205,27 @@ h1 {
   }
   .class-nav #hide-nav{
     font-size: 2.5vw;
+    margin: 40% 3% 10% 6%;
   }
   .nav-tabs{
     width: 105%;
+  }
+
+  body > div > header > div > nav > ul > li:nth-child(1),
+  body > div > header > div > nav > ul > li:nth-child(2),
+  body > div > header > div > nav > ul > li:nth-child(3){
+    padding: 16px 0px 36px 0px;
+    letter-spacing: 2px;
   }
 
   body > div > header > div > nav > ul > li:nth-child(4),
   body > div > header > div > nav > ul > li:nth-child(5),
   body > div > header > div > nav > ul > li:nth-child(6),
   body > div > header > div > nav > ul > li:nth-child(7){
-   top: 32%;
-   left: -55%;
+       margin: 0 29% 0px -28%;
+   }
   }
-}
+
 
 
   @keyframes navLinkFade{
