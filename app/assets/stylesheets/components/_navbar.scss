@@ -66,14 +66,13 @@ h1 {
   z-index: 1;
 }
 .class-nav {
-  display: flex;
-  margin: 0;
+  display: -webkit-box;
   list-style: none;
-  font-size: 1.6rem;
-  padding: 15px 0px 0px 0px;
+  font-size: 2.1vw;
   letter-spacing: 27px;
-  margin-top: -23%;
-  margin-left: 40%;
+  position: absolute;
+  right: 5%;
+  top: 10%;
 }
 
 .class-nav li a:hover{
@@ -109,20 +108,6 @@ h1 {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1200px){
-  .class-nav{
-    margin-top: -29%;
-    margin-left: 34%;
-  }
-  .card-deck{
-    width: 42%;
-  }
-}
-// @media screen and (max-width: 992px){
-//   .class-nav{
-
-//   }
-// }
 
 @media screen and (max-width: 768px){
   .title-byrd{
@@ -143,45 +128,43 @@ h1 {
       display: block;
       font-size: 3vw;
       white-space: nowrap;
-      margin: 40% -11% 0 17%;
+      margin: 40% 3% 10% 12%;
     }
 
     .nav-active {
-      transform: translateX(0%);
-      display: flex;
-      align-items: center;
-      width: 160%;
-      margin-left: -37%;
-      height: 269vh;
-      padding-top: -17%;
-      margin-top: -43%;
-      line-height: 22px;
+       transform: translateX(0%);
+       display: flex;
+       width: 107%;
+       padding-top: -17%;
+       line-height: 0px;
+       margin: -25% -13% 0 0;
     }
+
 
 
     body > div > header > div > nav > ul > li:nth-child(1),
-    body > div > header > div > nav > ul > li:nth-child(2){
+    body > div > header > div > nav > ul > li:nth-child(2),
+    body > div > header > div > nav > ul > li:nth-child(3){
       padding: 16px 0px 36px 0px;
       letter-spacing: 2px;
-      border-bottom: solid 0.5px rgba(255, 255, 255, .9);
     }
     body > div > header > div > nav > ul > li:nth-child(1):hover,
-    body > div > header > div > nav > ul > li:nth-child(2):hover{
-      border-bottom: solid 2.5px rgba(255, 255, 255, .9);
+    body > div > header > div > nav > ul > li:nth-child(2):hover,
+    body > div > header > div > nav > ul > li:nth-child(3):hover{
+      border-top: solid 2.5px rgb(219, 121, 53);
+      color: rgb(217,120, 52);
     }
 
 
-    body > div > header > div > nav > ul > li:nth-child(3),
     body > div > header > div > nav > ul > li:nth-child(4),
     body > div > header > div > nav > ul > li:nth-child(5),
-    body > div > header > div > nav > ul > li:nth-child(6){
-      margin-inline-start: auto;
-      width: 100%;
-      letter-spacing: 0;
-      font-weight: normal;
-      position: relative;
-      right: 33%;
-      top: 14%;
+    body > div > header > div > nav > ul > li:nth-child(6),
+    body > div > header > div > nav > ul > li:nth-child(7){
+     position: relative;
+     top: 49%;
+     font-size: 5vw;
+     letter-spacing: 8vw;
+     left: -53%;
     }
 
 
@@ -207,7 +190,7 @@ h1 {
     .card-deck {
       display: none !important;
     }
-}
+ }
 
 
 @media screen and (max-width: 576px){
@@ -225,6 +208,14 @@ h1 {
   }
   .nav-tabs{
     width: 105%;
+  }
+
+  body > div > header > div > nav > ul > li:nth-child(4),
+  body > div > header > div > nav > ul > li:nth-child(5),
+  body > div > header > div > nav > ul > li:nth-child(6),
+  body > div > header > div > nav > ul > li:nth-child(7){
+   top: 32%;
+   left: -55%;
   }
 }
 

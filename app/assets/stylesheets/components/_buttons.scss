@@ -104,6 +104,9 @@
     top: 22%;
     left: 43%;
   }
+  .btn-about{
+    display:none;
+  }
 }
 
 @media screen and (max-width: 576px){
@@ -124,6 +127,9 @@
     width: 50%;
     left: 27%;
     height: 37px;
+  }
+  .btn-about{
+    display:none;
   }
 }
 

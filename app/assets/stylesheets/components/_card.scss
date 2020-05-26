@@ -43,32 +43,10 @@
 
 }
 
-// class containing thought edifice and current projects
-.card-deck {
-  margin-bottom: auto;
-  width: 45%;
-  margin-right: 16%;
-  p {
-    font-size: 1.2vw !important;
-    padding-top: 2px;
-    color: #C0C0C0;
-  }
-}
+//class containing blog and projects
 
-.card-deck a{
-  text-decoration: none !important;
-  color: rgb(192,192,192) !important;
-  background-color: transparent !important;
-}
 
-@media screen and (max-width: 768px){
-  .card-deck{
-    margin-left: 10%;
-    margin-right: 13%;
-    margin: 3px -165px 2px -170px;
-  }
-}
-// thought edifice and current projects hover
+// blog and project hover
 
 .card-deck .card {
   display: flex;
@@ -95,11 +73,47 @@
   background-color: transparent;
 }
 
+@media screen and (max-width: 1600px){
+  .card-deck{
+   width: 35%;
+   margin: -4% 30% 0 6%;
+    p {
+      font-size: 1.2vw !important;
+      padding-top: 2px;
+      color: #C0C0C0;
+    }
+  }
+}
+
+.card-deck a{
+  text-decoration: none !important;
+  color: rgb(192,192,192) !important;
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 1200px){
+  .card-deck{
+    width: 42%;
+    position: absolute;
+    // top: 9%;
+    right: 16%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .card-deck{
+    margin-left: 10%;
+    margin-right: 13%;
+    margin: 3px -165px 2px -170px;
+  }
+}
+
 
 // profile-card is used to display the text for the homepage
   .profile-card {
-  padding: 30px 60px 0 0;
-   mix-blend-mode: hard-light;
+    padding: 62px 53px 0 0;
+    mix-blend-mode: hard-light;
+  }
   p {
    text-align: right;
    font-size: 20px;
@@ -110,7 +124,6 @@
    color: #C0C0C0;
    mix-blend-mode: hard-light;
     }
-  }
 
   .card-profile {
     border-radius: 20px;
