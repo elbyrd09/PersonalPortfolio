@@ -3,7 +3,6 @@
   margin-left: 50%;
   box-shadow: 0 10px 10px -5px;
   border-radius: 25%;
-  border-left: solid 3px white;
   height: 180px;
   width: 180px;
 }
@@ -13,7 +12,6 @@
   margin: 0 0 5% 0;
   box-shadow: 0 10px 10px -5px;
   border-radius: 25%;
-  border-bottom: solid 3px white;
   height: 180px;
   width: 180px;
  }
@@ -24,7 +22,6 @@
   margin-top: 5%;
   box-shadow: 0 10px 10px -5px;
   border-radius: 25%;
-  border-right: solid 3px white;
   height: 180px;
   width: 180px;
 }
@@ -35,7 +32,6 @@
   margin-top: -20%;
   box-shadow: 0 10px 10px -5px;
   border-radius: 25%;
-  border-top: solid 3px white;
   height: 180px;
   width: 180px;
 }
@@ -92,18 +88,23 @@
 
 @media screen and (max-width: 576px){
   .blog-show-desc{
-   width: 141%;
    text-align: right;
-   font-size: 1.3em;
+   font-size: 1em;
    padding-top: 60px;
    padding-left: 16px;
+  }
+  .blog-article{
+    width: 81%;
   }
   .photo-blog-2{
     margin: -14% 0 5% -35%;
   }
-  .photo-blog-3{
-    margin-left: 17%;
-    }
+
+  .photo-blog-4{
+    margin-left: 33%;
+    margin-top: -1%;
+  }
+
   .blog-non-title{
     margin: -16px 0px 0px -1px;
     font-size: larger;
