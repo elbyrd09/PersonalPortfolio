@@ -1,8 +1,9 @@
 class BlogsController < ApplicationController
-  before_action :set_blog, only: [:show, :edit, :update, :destroy]
+  before_action :set_blog, only: [:show]
 
   def index
-    @blogs = Blog.all
+    @blogs = Blog.order('created_at DESC')
+
     @code_blogs = @blogs.where(:style => 'Code')
     @personal_blogs = @blogs.where(:style => 'Personal')
     @artists_blogs = @blogs.where(:style => 'Artists')
@@ -15,23 +16,6 @@ class BlogsController < ApplicationController
     @blog = Blog.new
   end
 
-  def create
-    # @blog = Blog.new(blog_params)
-    # if @blog.save
-    #   redirect_to blogs_path
-    # else
-    #   render :new
-    # end
-  end
-
-  def edit
-  end
-
-  def update
-  end
-
-  def destroy
-  end
 
   private
 

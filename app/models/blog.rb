@@ -5,4 +5,5 @@ class Blog < ApplicationRecord
   validates :style, presence: true
   validates :handle, presence: true
   has_one_attached :photo
+
 end
