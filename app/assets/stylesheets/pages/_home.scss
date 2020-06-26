@@ -313,7 +313,15 @@
       "footer footer footer footer";
 }
 
-@media screen and (max-width: 1440px){
+ .title-byrd{
+  z-index: 1;
+ }
+
+  .blog-article{
+  z-index: 1;
+ }
+
+@media screen and (min-width: 1440px){
 body > div > footer > footer {
   width: 90%;
   margin-top: 0 !important;
@@ -321,15 +329,11 @@ body > div > footer > footer {
  body{
   z-index: 1;
  }
- .blog-article{
-  z-index: 1;
- }
+
  body > div > img{
   position: absolute;
  }
- .title-byrd{
-  z-index: 1;
- }
+
 }
 
 // project index page - uses same container-index as blogs but has different components and responsive needs
